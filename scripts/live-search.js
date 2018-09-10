@@ -1,8 +1,3 @@
-// live search starts //
-
-
-// live search ends //
-
 jQuery(document).ready(function($){
 
 $('.live-search-list li').each(function(){
@@ -26,4 +21,3 @@ var searchTerm = $(this).val().toLowerCase();
 });
 
 });
-

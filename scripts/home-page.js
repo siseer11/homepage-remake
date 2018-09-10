@@ -48,7 +48,7 @@ function init(){
 
 		/* Script for the nav to be sticky */
 
-		const isPassed = scrollY >= header.scrollHeight - navBarHeight;
+		const isPassed = scrollY >= 10;
 		if(isPassed && navBar.classList.contains('gb-background-transparent')){
 			navBar.classList.remove('gb-background-transparent');
 			navBar.classList.add('gb-background-primary' , 'sticky');
@@ -117,6 +117,24 @@ function init(){
 		}
 	})
 
-}
+	//weird no space thing on the right part of the list , fixed here
+	const listToBeFixed = document.querySelector('.card-16-list');
+	const elementToFixWith = listToBeFixed.querySelector('.list-space-right-fix');
 
-init();
+	const listToBeFixedListener = () => {
+		const showElementToFixWith = listToBeFixed.clientWidth < listToBeFixed.scrollWidth;
+		const shown = elementToFixWith.classList.contains('shown');
+		if(showElementToFixWith && !shown){
+			console.log('here')
+			elementToFixWith.classList.add('shown')
+		}else if(!showElementToFixWith && shown){
+			console.log('there')
+			elementToFixWith.classList.remove('shown')
+		}
+
+	}
+
+	listToBeFixedListener();
+	window.addEventListener('resize' , debounce(listToBeFixedListener));
+
+}

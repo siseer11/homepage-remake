@@ -2,687 +2,947 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <!-- set the encoding of your site -->
+  <meta charset="utf-8">
+  <!-- set the viewport width and initial-scale on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Globuzzer - World First Travelers Social Network</title>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="title" content="Globuzzer - World First Travelers Social Network">
+  <meta name="description" content="Globuzzer is the World's First Travelers' Social Network , here you can share your travel stories and get a full travel information from other nomads">
+  <meta name="keywords" content="globuzzer, traveler social network, social network for travelers">
+  <meta name="language" content="en">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta content="Globuzzer - World First Travelers Social Network" property="og:title">
+  <meta content="Globuzzer is the World's First Travelers' Social Network , here you can share your travel stories and get a full travel information from other nomads"
+    property="og:description">
+  <meta content="Globuzzer" property="og:site_name">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.globuzzer.com">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="./images/screenshot-globuzzer.jpg" name="twitter:image">
+  <meta content="Globuzzer - World First Travelers Social Network" name="twitter:title">
+  <meta content="Globuzzer is the World's First Travelers' Social Network , here you can share your travel stories and get a full travel information from other nomads"
+    name="twitter:description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type='text/css' href="gb-style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="scripts/videoJS/node_modules/video.js/dist/video-js.min.css" />
-  <title>Home-rework</title>
 </head>
 
 <body>
-  <div class='gb-nav-aside gb-gradient-red-black'>
-    <div class='nav-aside-image-background'>
-    </div>
-    <div class='nav-aside-content'>
-      <div class='nav-aside-close'>
-        <svg class='nav-aside-close-icon gb-icon-medium gb-icon-white-opacity-50 gb-phone-hide' version="1.1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
-          <use xlink:href='#close'></use>
-        </svg>
+  <div class='gb-app-wrapper'>
+    <div class='gb-nav-aside gb-gradient-red-black'>
+      <div class='nav-aside-image-background'>
       </div>
-      <ul class='nav-aside-content-top'>
-        <li class='nav-aside-top-list-item'>
-          <a data-scroll-to='about-us' class='nav-aside-link gb-text-white' href='#'>
-            <svg class='nav-aside-icon gb-icon-medium gb-icon-white-opacity-50' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <use xlink:href='#news'></use>
+      <div class='nav-aside-content'>
+        <div class='nav-aside-close'>
+          <svg class='nav-aside-close-icon gb-icon-medium gb-icon-white-opacity-50 gb-phone-hide' version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <use xlink:href='#close'></use>
+          </svg>
+        </div>
+        <ul class='nav-aside-content-top'>
+          <li class='nav-aside-top-list-item'>
+            <a data-scroll-to='about-us' class='nav-aside-link gb-text-white' href='#'>
+              <svg class='nav-aside-icon gb-icon-medium gb-icon-white-opacity-50' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href='#news'></use>
+              </svg>
+              <h5 class='gb-text-uppercase gb-text-white gb-title-tiny gb-text-uppercase'>about us</h5>
+            </a>
+          </li>
+          <li class='nav-aside-top-list-item'>
+            <a data-scroll-to='city-sections' class='nav-aside-link gb-text-white' href='#'>
+              <svg class='nav-aside-icon gb-icon-medium gb-icon-white-opacity-50' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href='#channels'></use>
+              </svg>
+              <h5 class='gb-text-uppercase gb-text-white gb-title-tiny gb-text-uppercase'>sections</h5>
+            </a>
+          </li>
+          <li class='nav-aside-top-list-item'>
+            <a data-scroll-to='parteners' class='nav-aside-link gb-text-white' href='#'>
+              <svg class='nav-aside-icon gb-icon-medium gb-icon-white-opacity-50' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href='#bookmarks'></use>
+              </svg>
+              <h5 class='gb-text-uppercase gb-text-white gb-title-tiny gb-text-uppercase'>parteners</h5>
+            </a>
+          </li>
+          <li class='nav-aside-top-list-item'>
+            <a data-scroll-to='contact-us' class='nav-aside-link gb-text-white' href='#'>
+              <svg class='nav-aside-icon gb-icon-medium gb-icon-white-opacity-50' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href='#overview'></use>
+              </svg>
+              <h5 class='gb-text-uppercase gb-text-white gb-title-tiny gb-text-uppercase'>contact us</h5>
+            </a>
+          </li>
+          <li class='nav-aside-top-list-item'>
+            <a href='https://globuzzer.mn.co/sign_in' class='nav-aside-link gb-text-white' href='#'>
+              <svg class='nav-aside-icon gb-icon-medium gb-icon-white-opacity-50' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href='#calendar'></use>
+              </svg>
+              <h5 class='gb-text-uppercase gb-text-white gb-title-tiny gb-text-uppercase'>sign in</h5>
+            </a>
+          </li>
+        </ul>
+        <div class='nav-aside-content-bottom line-top'>
+          <div class='content-left'>
+            <a href="#">
+              <svg class="gb-logo-large gb-icon-fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="#gb-logo-large"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page wrapper start -->
+    <div class='gb-page-wrapper'>
+      <div class='gb-page-black-overlay'></div>
+      <!-- Nav start-->
+      <div class="gb-navbar gb-background-transparent">
+        <div class="left-content">
+          <a href='#' class='gb-desktop-hide nav-burger'>
+            <svg class='gb-icon-medium gb-icon-white' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <use xlink:href='#menu'></use>
             </svg>
-            <h5 class='gb-text-uppercase gb-text-white gb-title-tiny gb-text-uppercase'>about us</h5>
           </a>
-        </li>
-        <li class='nav-aside-top-list-item'>
-          <a data-scroll-to='city-sections' class='nav-aside-link gb-text-white' href='#'>
-            <svg class='nav-aside-icon gb-icon-medium gb-icon-white-opacity-50' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <use xlink:href='#channels'></use>
-            </svg>
-            <h5 class='gb-text-uppercase gb-text-white gb-title-tiny gb-text-uppercase'>sections</h5>
-          </a>
-        </li>
-        <li class='nav-aside-top-list-item'>
-          <a data-scroll-to='parteners' class='nav-aside-link gb-text-white' href='#'>
-            <svg class='nav-aside-icon gb-icon-medium gb-icon-white-opacity-50' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <use xlink:href='#bookmarks'></use>
-            </svg>
-            <h5 class='gb-text-uppercase gb-text-white gb-title-tiny gb-text-uppercase'>parteners</h5>
-          </a>
-        </li>
-        <li class='nav-aside-top-list-item'>
-          <a data-scroll-to='contact-us' class='nav-aside-link gb-text-white' href='#'>
-            <svg class='nav-aside-icon gb-icon-medium gb-icon-white-opacity-50' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <use xlink:href='#overview'></use>
-            </svg>
-            <h5 class='gb-text-uppercase gb-text-white gb-title-tiny gb-text-uppercase'>contact us</h5>
-          </a>
-        </li>
-        <li class='nav-aside-top-list-item'>
-          <a href='https://globuzzer.mn.co/sign_in' class='nav-aside-link gb-text-white' href='#'>
-            <svg class='nav-aside-icon gb-icon-medium gb-icon-white-opacity-50' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <use xlink:href='#calendar'></use>
-            </svg>
-            <h5 class='gb-text-uppercase gb-text-white gb-title-tiny gb-text-uppercase'>sign in</h5>
-          </a>
-        </li>
-      </ul>
-      <div class='nav-aside-content-bottom line-top'>
-        <div class='content-left'>
-          <a href="#">
-            <svg class="gb-logo-large gb-icon-fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        </div>
+        <div class='center-content'>
+          <a class='nav-logo' href="#">
+            <svg class="gb-logo-large gb-icon-fill-white gb-phone-hide gb-desktop-hide" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
               <use xlink:href="#gb-logo-large"></use>
             </svg>
           </a>
+          <a class='nav-logo' href="#">
+            <svg class="gb-logo-large gb-icon-fill-white gb-tablet-hide gb-desktop-hide" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <use xlink:href="#gb-logo-small"></use>
+            </svg>
+          </a>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- Page wrapper start -->
- <div class='gb-app-wrapper'>
-  <div class='gb-page-wrapper'>
-    <div class='gb-page-black-overlay'></div>
-    <!-- Nav start-->
-    <div class="gb-navbar gb-background-transparent">
-      <div class="left-content">
-        <a class='nav-logo' href="#">
-          <svg class="gb-logo-large gb-icon-fill-white gb-phone-hide gb-tablet-hide" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <use xlink:href="#gb-logo-large"></use>
-          </svg>
-        </a>
-        <a href='#' class='gb-desktop-hide nav-burger'>
-          <svg class='gb-icon-medium gb-icon-white' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <use xlink:href='#menu'></use>
-          </svg>
-        </a>
-      </div>
-      <div class='center-content'>
-        <a class='nav-logo' href="#">
-          <svg class="gb-logo-large gb-icon-fill-white gb-phone-hide gb-desktop-hide" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <use xlink:href="#gb-logo-large"></use>
-          </svg>
-        </a>
-        <a class='nav-logo' href="#">
-          <svg class="gb-logo-large gb-icon-fill-white gb-tablet-hide gb-desktop-hide" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <use xlink:href="#gb-logo-small"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="right-content">
-        <a data-scroll-to='about-us' class='gb-tablet-hide gb-phone-hide gb-paragraph-memdium gb-text-white' href='#'>About us</a>
-        <a data-scroll-to='city-sections' class='gb-tablet-hide gb-phone-hide gb-paragraph-memdium gb-text-white' href='#'>Sections</a>
-        <a data-scroll-to='parteners' class='gb-tablet-hide gb-phone-hide gb-paragraph-memdium gb-text-white' href='#'>Parteners</a>
-        <a data-scroll-to='contact-us' class='gb-tablet-hide gb-phone-hide gb-paragraph-memdium gb-text-white' href='#'>Contact us</a>
-        <a href='https://globuzzer.mn.co/sign_in' class='gb-text-capitalize gb-text-white gb-paragraph-memdium'>sign in</a>
+        <div class="right-content">
+          <a data-scroll-to='about-us' class='gb-tablet-hide gb-phone-hide gb-paragraph-memdium gb-text-white' href='#'>About
+            us
+          </a>
+          <a data-scroll-to='city-sections' class='gb-tablet-hide gb-phone-hide gb-paragraph-memdium gb-text-white' href='#'>Sections</a>
+          <a data-scroll-to='parteners' class='gb-tablet-hide gb-phone-hide gb-paragraph-memdium gb-text-white' href='#'>Parteners</a>
+          <a data-scroll-to='contact-us' class='gb-tablet-hide gb-phone-hide gb-paragraph-memdium gb-text-white' href='#'>Contact
+            us
+          </a>
+          <a href='https://globuzzer.mn.co/sign_in' class='gb-text-capitalize gb-text-white gb-paragraph-memdium'>sign in</a>
 
+        </div>
       </div>
-    </div>
-    <!-- Nav end-->
-    <!-- Header start-->
-    <div class='header component-to-copy gb-card-13'>
-      <div class='header-black-overlay'></div>
-      <div class='image-background'>
-        <img class='card-13-background-image' src='./images/img3.png'>
-        <div class='background-gradient gb-gradient-red-black'></div>
-      </div>
-      <div class='card-13-content'>
-        <a class='big-logo-link' href="#">
-          <svg viewBox='0 0 101 13' class="gb-logo-90 gb-icon-fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <use xlink:href="#gb-logo-large"></use>
-          </svg>
-        </a>
-        <h2 class='gb-title-xx-large gb-text-center gb-text-white gb-margin-bottom-40'>Connect with your trusted friend in each city you move to
-        </h2>
-        <form class='gb-search-form gb-margin-bottom-16'>
-          <input type='text' class='search-input' placeholder="Find topics, cities and much more">
-          <input type='submit' value='Search' class='gb-phone-hide search-btn-green gb-background-green'>
-          <div class='gb-phone-show-flex gb-tablet-hide gb-desktop-hide search-btn-icon'>
-            <input type='submit' value='' class='input-search-icon'>
-            <svg class='gb-icon-medium gb-icon-white' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <use xlink:href='#search'></use>
+      <!-- Nav end-->
+      <!-- Header start-->
+      <div class='header component-to-copy gb-card-13'>
+        <div class='header-black-overlay'></div>
+        <div class='image-background'>
+          <img class='card-13-background-image' src='./images/img3.jpg'>
+          <div class='background-gradient gb-gradient-red-black'></div>
+        </div>
+        <div class='card-13-content'>
+          <a class='big-logo-link' href="#">
+            <svg viewBox='0 0 101 13' class="gb-logo-90 gb-icon-fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <use xlink:href="#gb-logo-large"></use>
             </svg>
-          </div>
-        </form>
-        <a href='https://globuzzer.mn.co/sign_up' class='btn gb-btn gb-btn-green gb-btn-medium gb-text-uppercase'>Join us</a>
-        <div class='gb-card-info-bottom'>
-          <div class='content-piece'>
-            <h2 class='gb-text-white gb-desktop-title-large gb-title-medium'>17k</h2>
-            <p class='gb-text-white gb-subtitle-large'>users</p>
-          </div>
-          <div class='content-piece'>
-            <h2 class='gb-text-white gb-desktop-title-large gb-title-medium'>17</h2>
-            <p class='gb-text-white gb-subtitle-large'>city sections</p>
-          </div>
-          <div class='content-piece'>
-            <h2 class='gb-text-white gb-desktop-title-large gb-title-medium'>30+</h2>
-            <p class='gb-text-white gb-subtitle-large'>universities</p>
+          </a>
+          <h2 class='gb-title-xx-large gb-text-center gb-text-white gb-margin-bottom-40'>Connect with your trusted friend
+            in each city you move to
+          </h2>
+          <form class='gb-search-form gb-margin-bottom-16'>
+            <input type='text' class='search-input' placeholder="Find topics, cities and much more">
+            <input type='submit' value='Search' class='gb-phone-hide search-btn-green gb-background-green'>
+            <div class='gb-phone-show-flex gb-tablet-hide gb-desktop-hide search-btn-icon'>
+              <input type='submit' value='' class='input-search-icon'>
+              <svg class='gb-icon-medium gb-icon-white' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href='#search'></use>
+              </svg>
+            </div>
+          </form>
+          <a href='https://globuzzer.mn.co/sign_up' class='btn gb-btn gb-btn-green gb-btn-medium gb-text-uppercase'>Join
+            us
+          </a>
+          <div class='gb-card-info-bottom'>
+            <div class='content-piece'>
+              <h2 class='gb-text-white gb-desktop-title-large gb-title-medium'>17k</h2>
+              <p class='gb-text-white gb-subtitle-large'>users</p>
+            </div>
+            <div class='content-piece'>
+              <h2 class='gb-text-white gb-desktop-title-large gb-title-medium'>17</h2>
+              <p class='gb-text-white gb-subtitle-large'>city sections</p>
+            </div>
+            <div class='content-piece'>
+              <h2 class='gb-text-white gb-desktop-title-large gb-title-medium'>30+</h2>
+              <p class='gb-text-white gb-subtitle-large'>universities</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Header end -->
-    <!-- About-us start-->
-    <div id='about-us' class="gb-section-600">
-      <h2 class="gb-text-dark-blue gb-title-large gb-text-center gb-margin-bottom-40">Globuzzer is a Social Network for Students and Expats</h2>
-      <p class="gb-text-dark-blue gb-paragraph-medium gb-text-center">We provide customized services, trusted guidance, free information and much more in each city you go.</p>
-    </div>
-    <!-- About-us end-->
-    <!-- How-to-join start-->
-    <div data-for='joinData' class='gb-image-carousel-1 gb-padding-bottom-56 gb-padding-top-16 gb-margin-bottom-24'>
-      <h2 class="gb-text-dark-blue gb-title-xx-large gb-text-center gb-text-uppercase gb-margin-bottom-40 gb-margin-top-40">how to join</h2>
-      <ul class='carousel-1-images-list'>
-      </ul>
-      <div class='carousel-1-about-slide gb-margin-top-24 gb-margin-bottom-8'>
-        <h2 class='carousel-1-slide-title gb-text-black gb-title-medium-large-on-desktop gb-margin-bottom-8'></h2>
-        <a class='carousel-1-slide-author gb-text-black-opacity-50 gb-paragraph-small' href='#' class='image-photographer'></a>
+      <!-- Header end -->
+      <!-- About-us start-->
+      <div id='about-us' class="gb-section-600">
+        <h2 class="gb-text-dark-blue gb-title-large gb-text-center gb-margin-bottom-40">Globuzzer is a Social Network for
+          Students and Expats</h2>
+        <p class="gb-text-dark-blue gb-paragraph-medium gb-text-center">We provide customized services, trusted guidance,
+          free information and much more in each city you go.</p>
       </div>
-      <ul class='carousel-1-pagination'>
-      </ul>
-    </div>
-    <!-- How-to-join end-->
-  			 
-    
-    <!-- CITY SECTION START -->
-  <div class="gb-page-content-center gb-flex-direction-column">
-       <h1 class='gb-margin-bottom-40 gb-margin-top-40 gb-text-black gb-title-xx-large gb-text-center gb-text-uppercase'>city section</h1>
-       
-		
-       
-   </div> 
-   <div class="gb-input-wrapper gb-margin-bottom-32">
-        <label class="gb-input-icon-left-black" for="search-input">
-       		 <svg class="attachement-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <use xlink:href="#search"></use>
-            </svg>
-         </label>
-			<input class="gb-text-input-outlined-red live-search-box" id="search-input" type='text' placeholder='Search cities here...' />
-	    </div>   
-  <div class="gb-card-six-wrapper">
-    <ul class="gb-card-six live-search-list">
-       
-       <li onclick="window.location.href.target=window.open('http://www.globuzzer.com/stockholm.php');" class="gb-card-six-image"><div class="gb-card-six-background-image"><img src="images/stockholm.jpg"><div class="background-gradient gb-gradient-white-black"></div></div><div class="gb-card-six-info"><p class="gb-phsix-title-tiny gb-title-large">Stockholm</p><div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div></div><div class="gb-card-six-avatars-wrapper"><div class="gb-title-small"><p>Members</p></div><div class="gb-card-six-follower-avatar"><div class="gb-card-six-avatars-container"><p>2K+</p></div></div></div></li>
-       <li onclick="window.location.href.target=window.open('http://www.globuzzer.com/oslo.php');" class="gb-card-six-image"><div class="gb-card-six-background-image"><img src="images/oslo.jpg"><div class="background-gradient gb-gradient-white-black"></div></div><div class="gb-card-six-info"><p class="gb-phsix-title-tiny gb-title-large">Oslo</p><div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div></div><div class="gb-card-six-avatars-wrapper"><div class="gb-title-small"><p>Members</p></div><div class="gb-card-six-follower-avatar"><div class="gb-card-six-avatars-container"><p>2K+</p></div></div></div></li>
-       <li  onclick="window.location.href.target=window.open('http://www.globuzzer.com/helsinki.php');" class="gb-card-six-image"><div class="gb-card-six-background-image"><img src="images/helsinki.jpg"><div class="background-gradient gb-gradient-white-black"></div></div><div class="gb-card-six-info"><p class="gb-phsix-title-tiny gb-title-large">Helsinki</p><div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div></div><div class="gb-card-six-avatars-wrapper"><div class="gb-title-small"><p>Members</p></div><div class="gb-card-six-follower-avatar"><div class="gb-card-six-avatars-container"><p>2K+</p></div></div></div></li>
-       <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/195344');" class="gb-card-six-image"><div class="gb-card-six-background-image"><img src="images/London.jpg"><div class="background-gradient gb-gradient-white-black"></div></div><div class="gb-card-six-info"><p class="gb-phsix-title-tiny gb-title-large">London</p><div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div></div><div class="gb-card-six-avatars-wrapper"><div class="gb-title-small"><p>Members</p></div><div class="gb-card-six-follower-avatar"><div class="gb-card-six-avatars-container"><p>2K+</p></div></div></div></li>
-       <li onclick="window.location.href.target=window.open('http://www.globuzzer.com/copenhagen.php');" class="gb-card-six-image"><div class="gb-card-six-background-image"><img src="images/copenhagen.jpg"><div class="background-gradient gb-gradient-white-black"></div></div><div class="gb-card-six-info"><p class="gb-phsix-title-tiny gb-title-large">Copenhagen</p><div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div></div><div class="gb-card-six-avatars-wrapper"><div class="gb-title-small"><p>Members</p></div><div class="gb-card-six-follower-avatar"><div class="gb-card-six-avatars-container"><p>2K+</p></div></div></div></li>
-       <li onclick="window.location.href.target=window.open('http://www.globuzzer.com/rome.php');" class="gb-card-six-image"><div class="gb-card-six-background-image"><img src="images/Rome.jpg"><div class="background-gradient gb-gradient-white-black"></div></div><div class="gb-card-six-info"><p class="gb-phsix-title-tiny gb-title-large">Rome</p><div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div></div><div class="gb-card-six-avatars-wrapper"><div class="gb-title-small"><p>Members</p></div><div class="gb-card-six-follower-avatar"><div class="gb-card-six-avatars-container"><p>2K+</p></div></div></div></li>
-       <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/569795');" class="gb-card-six-image"><div class="gb-card-six-background-image"><img src="images/Bogota.jpg"><div class="background-gradient gb-gradient-white-black"></div></div><div class="gb-card-six-info"><p class="gb-phsix-title-tiny gb-title-large">Bogota</p><div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div></div><div class="gb-card-six-avatars-wrapper"><div class="gb-title-small"><p>Members</p></div><div class="gb-card-six-follower-avatar"><div class="gb-card-six-avatars-container"><p>2K+</p></div></div></div></li>
-       <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/258697');" class="gb-card-six-image"><div class="gb-card-six-background-image"><img src="images/Milan.jpg"><div class="background-gradient gb-gradient-white-black"></div></div><div class="gb-card-six-info"><p class="gb-phsix-title-tiny gb-title-large">Milan</p><div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div></div><div class="gb-card-six-avatars-wrapper"><div class="gb-title-small"><p>Members</p></div><div class="gb-card-six-follower-avatar"><div class="gb-card-six-avatars-container"><p>2K+</p></div></div></div></li>
-       <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/588489');" class="gb-card-six-image"><div class="gb-card-six-background-image"><img src="images/Salatiga.jpg"><div class="background-gradient gb-gradient-white-black"></div></div><div class="gb-card-six-info"><p class="gb-phsix-title-tiny gb-title-large">Salatiga</p><div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div></div><div class="gb-card-six-avatars-wrapper"><div class="gb-title-small"><p>Members</p></div><div class="gb-card-six-follower-avatar"><div class="gb-card-six-avatars-container"><p>2K+</p></div></div></div></li>
-        <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/195835');" class="gb-card-six-image"><div class="gb-card-six-background-image"><img src="images/Barcelona.jpg"><div class="background-gradient gb-gradient-white-black"></div></div><div class="gb-card-six-info"><p class="gb-phsix-title-tiny gb-title-large">Barcelona</p><div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div></div><div class="gb-card-six-avatars-wrapper"><div class="gb-title-small"><p>Members</p></div><div class="gb-card-six-follower-avatar"><div class="gb-card-six-avatars-container"><p>2K+</p></div></div></div></li>
-       <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/244080');" class="gb-card-six-image"><div class="gb-card-six-background-image"><img src="images/Jakarta.jpg"><div class="background-gradient gb-gradient-white-black"></div></div><div class="gb-card-six-info"><p class="gb-phsix-title-tiny gb-title-large">Jakarta</p><div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div></div><div class="gb-card-six-avatars-wrapper"><div class="gb-title-small"><p>2K+</p><p>Members</p></div><div class="gb-card-six-follower-avatar"><div class="gb-card-six-avatars-container"></div></div></div></li>
-       
-       <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/446233');" class="gb-card-six-image"><div class="gb-card-six-background-image"><img src="images/Lisbon.jpg"><div class="background-gradient gb-gradient-white-black"></div></div><div class="gb-card-six-info"><p class="gb-phsix-title-tiny gb-title-large">Lisbon</p><div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div></div><div class="gb-card-six-avatars-wrapper"><div class="gb-title-small"><p>Members</p></div><div class="gb-card-six-follower-avatar"><div class="gb-card-six-avatars-container"><p>2K+</p></div></div></div></li>
-       
-       
-      
-    </ul>
-  </div>
-      
-  <!-- CITY SECTION ENDS -->
-  
-    <!-- Video section start-->
-    <div class='gb-video-section gb-padding-bottom-48 gb-margin-top-32 gb-padding-top-56'>
-      <h2 class='gb-text-center gb-text-black gb-title-xx-large gb-text-uppercase'>Featured Videos</h2>
-      <div data-for='videosData' class='gb-image-carousel-1'>
+      <!-- About-us end-->
+      <!-- How-to-join start-->
+      <div data-for='joinData' class='gb-image-carousel-1 gb-padding-bottom-56 gb-padding-top-16 gb-margin-bottom-24'>
+        <h2 class="gb-text-dark-blue gb-title-xx-large gb-text-center gb-text-uppercase gb-margin-bottom-40 gb-margin-top-40">how
+          to join</h2>
         <ul class='carousel-1-images-list'>
         </ul>
-        <div class='carousel-1-about-slide gb-margin-bottom-16'>
+        <div class='carousel-1-about-slide gb-margin-top-24 gb-margin-bottom-8'>
           <h2 class='carousel-1-slide-title gb-text-black gb-title-medium-large-on-desktop gb-margin-bottom-8'></h2>
           <a class='carousel-1-slide-author gb-text-black-opacity-50 gb-paragraph-small' href='#' class='image-photographer'></a>
         </div>
         <ul class='carousel-1-pagination'>
         </ul>
       </div>
-    </div>
-    <!-- Video section end-->
-    <!-- Travelers’ Needs start-->
-    <div class='gb-card-16 travelers-needs'>
-      <h1 class='card-16-title gb-text-dark-blue gb-title-xx-large gb-text-center gb-text-uppercase'>Travelers’ Needs</h1>
-      <p class='card-16-subtitle gb-paragraph-medium gb-text-black gb-text-center'>Other helpful applications which are powered by us. Enjoy!</p>
-      <ul class='card-16-list'>
-        <li class="gb-card-15 gb-border-radius-12 gb-background-white gb-text-center coming-soon">
-          <div class='coming-soon'>
-            <h2 class='gb-text-uppercase gb-text-red'>Coming soon</h2>
+      <!-- How-to-join end-->
+
+      <!-- CITY SECTION START -->
+      <div class="gb-page-content-center gb-flex-direction-column">
+        <h1 class='gb-margin-bottom-40 gb-margin-top-40 gb-text-black gb-title-xx-large gb-text-center gb-text-uppercase'>city
+          section</h1>
+
+
+
+      </div>
+      <div class="gb-input-wrapper gb-margin-bottom-32">
+        <label class="gb-input-icon-left-black" for="search-input">
+          <svg class="attachement-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <use xlink:href="#search"></use>
+          </svg>
+        </label>
+        <input class="gb-text-input-outlined-red live-search-box" id="search-input" type='text' placeholder='Search cities here...'
+        />
+      </div>
+      <div class="gb-card-six-wrapper">
+        <ul class="gb-card-six live-search-list">
+
+          <li onclick="window.location.href.target=window.open('http://www.globuzzer.com/stockholm.php');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/stockholm.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+            </div>
+            <div class="gb-card-six-info">
+              <p class="gb-phsix-title-tiny gb-title-large">Stockholm</p>
+              <div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div>
+            </div>
+            <div class="gb-card-six-avatars-wrapper">
+              <div class="gb-title-small">
+                <p>Members</p>
+              </div>
+              <div class="gb-card-six-follower-avatar">
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li onclick="window.location.href.target=window.open('http://www.globuzzer.com/oslo.php');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/oslo.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+            </div>
+            <div class="gb-card-six-info">
+              <p class="gb-phsix-title-tiny gb-title-large">Oslo</p>
+              <div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div>
+            </div>
+            <div class="gb-card-six-avatars-wrapper">
+              <div class="gb-title-small">
+                <p>Members</p>
+              </div>
+              <div class="gb-card-six-follower-avatar">
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li onclick="window.location.href.target=window.open('http://www.globuzzer.com/helsinki.php');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/helsinki.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+            </div>
+            <div class="gb-card-six-info">
+              <p class="gb-phsix-title-tiny gb-title-large">Helsinki</p>
+              <div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div>
+            </div>
+            <div class="gb-card-six-avatars-wrapper">
+              <div class="gb-title-small">
+                <p>Members</p>
+              </div>
+              <div class="gb-card-six-follower-avatar">
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/195344');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/London.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+            </div>
+            <div class="gb-card-six-info">
+              <p class="gb-phsix-title-tiny gb-title-large">London</p>
+              <div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div>
+            </div>
+            <div class="gb-card-six-avatars-wrapper">
+              <div class="gb-title-small">
+                <p>Members</p>
+              </div>
+              <div class="gb-card-six-follower-avatar">
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li onclick="window.location.href.target=window.open('http://www.globuzzer.com/copenhagen.php');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/copenhagen.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+            </div>
+            <div class="gb-card-six-info">
+              <p class="gb-phsix-title-tiny gb-title-large">Copenhagen</p>
+              <div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div>
+            </div>
+            <div class="gb-card-six-avatars-wrapper">
+              <div class="gb-title-small">
+                <p>Members</p>
+              </div>
+              <div class="gb-card-six-follower-avatar">
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li onclick="window.location.href.target=window.open('http://www.globuzzer.com/rome.php');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/Rome.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+            </div>
+            <div class="gb-card-six-info">
+              <p class="gb-phsix-title-tiny gb-title-large">Rome</p>
+              <div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div>
+            </div>
+            <div class="gb-card-six-avatars-wrapper">
+              <div class="gb-title-small">
+                <p>Members</p>
+              </div>
+              <div class="gb-card-six-follower-avatar">
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/569795');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/Bogota.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+            </div>
+            <div class="gb-card-six-info">
+              <p class="gb-phsix-title-tiny gb-title-large">Bogota</p>
+              <div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div>
+            </div>
+            <div class="gb-card-six-avatars-wrapper">
+              <div class="gb-title-small">
+                <p>Members</p>
+              </div>
+              <div class="gb-card-six-follower-avatar">
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/258697');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/Milan.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+            </div>
+            <div class="gb-card-six-info">
+              <p class="gb-phsix-title-tiny gb-title-large">Milan</p>
+              <div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div>
+            </div>
+            <div class="gb-card-six-avatars-wrapper">
+              <div class="gb-title-small">
+                <p>Members</p>
+              </div>
+              <div class="gb-card-six-follower-avatar">
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/588489');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/Salatiga.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+            </div>
+            <div class="gb-card-six-info">
+              <p class="gb-phsix-title-tiny gb-title-large">Salatiga</p>
+              <div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div>
+            </div>
+            <div class="gb-card-six-avatars-wrapper">
+              <div class="gb-title-small">
+                <p>Members</p>
+              </div>
+              <div class="gb-card-six-follower-avatar">
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/195835');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/Barcelona.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+            </div>
+            <div class="gb-card-six-info">
+              <p class="gb-phsix-title-tiny gb-title-large">Barcelona</p>
+              <div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div>
+            </div>
+            <div class="gb-card-six-avatars-wrapper">
+              <div class="gb-title-small">
+                <p>Members</p>
+              </div>
+              <div class="gb-card-six-follower-avatar">
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/244080');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/Jakarta.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+            </div>
+            <div class="gb-card-six-info">
+              <p class="gb-phsix-title-tiny gb-title-large">Jakarta</p>
+              <div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div>
+            </div>
+            <div class="gb-card-six-avatars-wrapper">
+              <div class="gb-title-small">
+                <p>2K+</p>
+                <p>Members</p>
+              </div>
+              <div class="gb-card-six-follower-avatar">
+                <div class="gb-card-six-avatars-container"></div>
+              </div>
+            </div>
+          </li>
+
+          <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/446233');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/Lisbon.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+            </div>
+            <div class="gb-card-six-info">
+              <p class="gb-phsix-title-tiny gb-title-large">Lisbon</p>
+              <div class="gb-card-six-btn-wrapper"><input class="gb-btn gb-btn-small gb-btn-white" value="following" type="button"></div>
+            </div>
+            <div class="gb-card-six-avatars-wrapper">
+              <div class="gb-title-small">
+                <p>Members</p>
+              </div>
+              <div class="gb-card-six-follower-avatar">
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CITY SECTION ENDS -->
+
+      <!-- Video section start-->
+      <div class='gb-video-section gb-padding-bottom-48 gb-margin-top-32 gb-padding-top-56'>
+        <h2 class='gb-text-center gb-text-black gb-title-xx-large gb-text-uppercase gb-margin-bottom-32 gb-margin-top-32 gb-padding-top-16'>Featured
+          Videos</h2>
+        <div data-for='videosData' class='gb-image-carousel-1'>
+          <ul class='carousel-1-images-list'>
+          </ul>
+          <div class='carousel-1-about-slide gb-margin-bottom-16'>
+            <h2 class='carousel-1-slide-title gb-text-black gb-title-medium-large-on-desktop gb-margin-bottom-8'></h2>
+            <a class='carousel-1-slide-author gb-text-black-opacity-50 gb-paragraph-small' href='#' class='image-photographer'></a>
           </div>
-          <img src='images/c1.png' alt='z' class='gb-card-15-img'>
-          <h2 class='card-15-title gb-title-medium gb-text-black gb-text-capitalize'>FoodBuzzer</h2>
-          <p class='card-15-paragraph gb-paragraph-small gb-text-black'>Explore the food in new cities from the perspective with locals, as your guide</p>
-        </li>
-        <li class="gb-card-15 gb-border-radius-12 gb-background-white gb-text-center">
-          <a href='http://timezone-converter.globuzzer.com/'>
+          <ul class='carousel-1-pagination'>
+          </ul>
+        </div>
+      </div>
+      <!-- Video section end-->
+      <!-- Travelers’ Needs start-->
+      <div class='gb-card-16 travelers-needs'>
+        <h1 class='card-16-title gb-text-dark-blue gb-title-xx-large gb-text-center gb-text-uppercase'>Travelers’ Needs</h1>
+        <p class='card-16-subtitle gb-paragraph-medium gb-text-black gb-text-center'>Other helpful applications which are
+          powered by us. Enjoy!</p>
+        <ul class='card-16-list'>
+          <li class="gb-card-15 gb-border-radius-12 gb-background-white gb-text-center gb-shadow-large gb-hover">
+            <a href='http://timezone-converter.globuzzer.com/'>
+              <div class='coming-soon'>
+                <h2 class='gb-text-uppercase gb-text-red'>Coming soon</h2>
+              </div>
+              <img src='images/c2.png' alt='z' class='gb-card-15-img'>
+              <h2 class='card-15-title gb-title-medium gb-text-black gb-text-capitalize'>Time convertor</h2>
+              <p class='card-15-paragraph gb-paragraph-small gb-text-black'>Easy tool to check the time in your travel destination</p>
+            </a>
+          </li>
+          <li class="gb-card-15 gb-border-radius-12 gb-background-white gb-text-center gb-shadow-large gb-hover">
+            <a href='https://globuzzer.mn.co/search?term=Skillscanner'>
+              <div class='coming-soon'>
+                <h2 class='gb-text-uppercase gb-text-red'>Coming soon</h2>
+              </div>
+              <img src='images/c4.png' alt='z' class='gb-card-15-img'>
+              <h2 class='card-15-title gb-title-medium gb-text-black gb-text-capitalize'>Skillscanner</h2>
+              <p class='card-15-paragraph gb-paragraph-small gb-text-black'>Daily job postings in the Nordics for English
+                speakers
+              </p>
+            </a>
+          </li>
+          <li class="gb-card-15 gb-border-radius-12 gb-background-white gb-text-center coming-soon gb-shadow-large">
             <div class='coming-soon'>
               <h2 class='gb-text-uppercase gb-text-red'>Coming soon</h2>
             </div>
-            <img src='images/c2.png' alt='z' class='gb-card-15-img'>
-            <h2 class='card-15-title gb-title-medium gb-text-black gb-text-capitalize'>Time convertor</h2>
-            <p class='card-15-paragraph gb-paragraph-small gb-text-black'>Easy tool to check the time in your travel destination</p>
-          </a>
-        </li>
-        <li class="gb-card-15 gb-border-radius-12 gb-background-white gb-text-center coming-soon">
-          <div class='coming-soon'>
-            <h2 class='gb-text-uppercase gb-text-red'>Coming soon</h2>
-          </div>
-          <img src='images/c3.png' alt='z' class='gb-card-15-img'>
-          <h2 class='card-15-title gb-title-medium gb-text-black gb-text-capitalize'>Accomendo</h2>
-          <p class='card-15-paragraph gb-paragraph-small gb-text-black'>A new app is under construction, it will help you to find new place abroad</p>
-        </li>
-        <li class="gb-card-15 gb-border-radius-12 gb-background-white gb-text-center">
-          <a href='https://globuzzer.mn.co/search?term=Skillscanner'>
+            <img src='images/c1.png' alt='z' class='gb-card-15-img'>
+            <h2 class='card-15-title gb-title-medium gb-text-black gb-text-capitalize'>FoodBuzzer</h2>
+            <p class='card-15-paragraph gb-paragraph-small gb-text-black'>Explore the food in new cities from the perspective
+              with locals, as your guide</p>
+          </li>
+          <li class="gb-card-15 gb-border-radius-12 gb-background-white gb-text-center coming-soon gb-shadow-large">
             <div class='coming-soon'>
               <h2 class='gb-text-uppercase gb-text-red'>Coming soon</h2>
             </div>
-            <img src='images/c4.png' alt='z' class='gb-card-15-img'>
-            <h2 class='card-15-title gb-title-medium gb-text-black gb-text-capitalize'>Skillscanner</h2>
-            <p class='card-15-paragraph gb-paragraph-small gb-text-black'>Daily job postings in the Nordics for English speakers</p>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- Travelers’ Needs end-->
-     <!-- TIMELINE SECTION STARTS -->
-    <h1 class='gb-margin-bottom-40 gb-margin-top-40 gb-text-black gb-title-xx-large gb-text-center gb-text-uppercase'>timeline</h1>
-  <div class="gb-card-five-wrapper">
-    <div class='gb-card-five-day'>
+            <img src='images/c3.png' alt='z' class='gb-card-15-img'>
+            <h2 class='card-15-title gb-title-medium gb-text-black gb-text-capitalize'>Accomendo</h2>
+            <p class='card-15-paragraph gb-paragraph-small gb-text-black'>A new app is under construction, it will help you
+              to find new place abroad</p>
+          </li>
+          <li class="list-space-right-fix">
+            <div class='empty-filled-width-fix'></div>
+          </li>
+        </ul>
+      </div>
+      <!-- Travelers’ Needs end-->
+      <!-- TIMELINE SECTION STARTS -->
+      <h1 class='gb-margin-bottom-40 gb-margin-top-40 gb-text-black gb-title-xx-large gb-text-center gb-text-uppercase'>timeline</h1>
+      <div class="gb-card-five-wrapper">
+        <div class='gb-card-five-day'>
           <div class='gb-card-five-day-head'>
             <h2 class='gb-card-five-day-title'>2018</h2>
           </div>
-    <ul class="gb-card-five-cards">
-      <li class="gb-card-five-card">
-        <div class="gb-card-five-card-icon">
-          <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <use xlink:href="#bookmarks"></use>
-          </svg>
+          <ul class="gb-card-five-cards">
+            <li class="gb-card-five-card">
+              <div class="gb-card-five-card-icon">
+                <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="#bookmarks"></use>
+                </svg>
+              </div>
+              <div class="gb-card-five-card-content">
+                <div class="gb-card-five-card-title-time">
+                  <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">Graduation from KTH Innovations Pre-Incubator</h3>
+                  <p class="gb-subtitle-small gb-text-dark-blue">31.May.2018</p>
+                </div>
+                <div class="article-title">
+                  <h4 class="gb-title-medium">Globuzzer has officially received a ceritificate of excellence</h4>
+                </div>
+              </div>
+              <div class="gb-card-five-wrapper-article-image">
+                <img src="images/Graduation-team.jpg" alt="ceritificate of excellence">
+              </div>
+            </li>
+            <li class="gb-card-five-card">
+              <div class="gb-card-five-card-icon">
+                <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="#bookmarks"></use>
+                </svg>
+              </div>
+              <div class="gb-card-five-card-content">
+                <div class="gb-card-five-card-title-time">
+                  <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">UKSW University</h3>
+                  <p class="gb-subtitle-small gb-text-dark-blue">03.Apr.2018</p>
+                </div>
+                <div class="article-title">
+                  <h4 class="gb-title-medium">Partnership with UKSW University</h4>
+                </div>
+              </div>
+              <div class="gb-card-five-wrapper-article-image">
+                <img src="images/UKSW.jpg" alt="Partnership with UKSW University">
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="gb-card-five-card-content">
-          <div class="gb-card-five-card-title-time">
-            <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">Graduation from KTH Innovations Pre-Incubator</h3>
-            <p class="gb-subtitle-small gb-text-dark-blue">31.May.2018</p>
-          </div>
-          <div class="article-title">
-            <h4 class="gb-title-medium">Globuzzer has officially received a ceritificate of excellence</h4>
-          </div>
-        </div>
-        <div class="gb-card-five-wrapper-article-image">
-          <img src="images/Graduation-team.jpg" alt="ceritificate of excellence">
-        </div>
-      </li>
-      <li class="gb-card-five-card">
-        <div class="gb-card-five-card-icon">
-          <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <use xlink:href="#bookmarks"></use>
-          </svg>
-        </div>
-        <div class="gb-card-five-card-content">
-          <div class="gb-card-five-card-title-time">
-            <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">UKSW University</h3>
-            <p class="gb-subtitle-small gb-text-dark-blue">03.Apr.2018</p>
-          </div>
-          <div class="article-title">
-            <h4 class="gb-title-medium">Partnership with UKSW University</h4>
-          </div>
-        </div>
-        <div class="gb-card-five-wrapper-article-image">
-          <img src="images/UKSW.jpg" alt="Partnership with UKSW University">
-        </div>
-      </li>
-    </ul>
-   </div> 
-    <div class='gb-card-five-day'>
+        <div class='gb-card-five-day'>
           <div class='gb-card-five-day-head'>
             <h2 class='gb-card-five-day-title'>2017</h2>
           </div>
-    <ul class="gb-card-five-cards">
-      <li class="gb-card-five-card">
-        <div class="gb-card-five-card-icon">
-          <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <use xlink:href="#bookmarks"></use>
-          </svg>
+          <ul class="gb-card-five-cards">
+            <li class="gb-card-five-card">
+              <div class="gb-card-five-card-icon">
+                <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="#bookmarks"></use>
+                </svg>
+              </div>
+              <div class="gb-card-five-card-content">
+                <div class="gb-card-five-card-title-time">
+                  <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">Globuzzer @ SweDemo Day, the biggest startup event
+                    in Sweden</h3>
+                  <p class="gb-subtitle-small gb-text-dark-blue">12.Dec.2017</p>
+                </div>
+                <div class="article-title">
+                  <h4 class="gb-title-medium">Sweden’s largest and most spectacular un-conference for startups and investors
+                    in the digital realms is back to display and crown the up-and-coming, under-the-radar.</h4>
+                </div>
+              </div>
+              <div class="gb-card-five-wrapper-article-image">
+                <img src="images/swedemo.jpg" alt="Globuzzer @ SweDemo Day">
+              </div>
+            </li>
+            <li class="gb-card-five-card">
+              <div class="gb-card-five-card-icon">
+                <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="#bookmarks"></use>
+                </svg>
+              </div>
+              <div class="gb-card-five-card-content">
+                <div class="gb-card-five-card-title-time">
+                  <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">Joined KTH Innovations Pre-incubator</h3>
+                  <p class="gb-subtitle-small gb-text-dark-blue">31.May.2017</p>
+                </div>
+                <div class="article-title">
+                  <h4 class="gb-title-medium">The KTH Innovation pre-incubator program is a yearlong program for early-stage,
+                    tech-based projects from KTH, one of the best technical universities in the World, looking to speed up
+                    their development.</h4>
+                </div>
+              </div>
+              <div class="gb-card-five-wrapper-article-image">
+                <img src="images/Pre-incubator.jpg" alt="Joined KTH Innovations Pre-incubator">
+              </div>
+            </li>
+            <li class="gb-card-five-card">
+              <div class="gb-card-five-card-icon">
+                <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="#bookmarks"></use>
+                </svg>
+              </div>
+              <div class="gb-card-five-card-content">
+                <div class="gb-card-five-card-title-time">
+                  <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">Featured by Mighty Networks</h3>
+                  <p class="gb-subtitle-small gb-text-dark-blue">01.Apr.2017</p>
+                </div>
+                <div class="article-title">
+                  <h4 class="gb-title-medium">Globuzzer has also been selected as a successful showcase in Silicon Valley
+                    by the hosted social network builder company Mighty Networks.</h4>
+                </div>
+              </div>
+              <div class="gb-card-five-wrapper-article-image">
+                <img src="images/mightynetwork.jpg" alt="Featured by Mighty Networks">
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="gb-card-five-card-content">
-          <div class="gb-card-five-card-title-time">
-            <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">Globuzzer @ SweDemo Day, the biggest startup event in Sweden</h3>
-            <p class="gb-subtitle-small gb-text-dark-blue">12.Dec.2017</p>
-          </div>
-          <div class="article-title">
-            <h4 class="gb-title-medium">Sweden’s largest and most spectacular un-conference for startups and investors in the digital realms is back to display and crown the up-and-coming, under-the-radar.</h4>
-          </div>
-        </div>
-        <div class="gb-card-five-wrapper-article-image">
-          <img src="images/swedemo.jpg" alt="Globuzzer @ SweDemo Day">
-        </div>
-      </li>
-      <li class="gb-card-five-card">
-        <div class="gb-card-five-card-icon">
-          <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <use xlink:href="#bookmarks"></use>
-          </svg>
-        </div>
-        <div class="gb-card-five-card-content">
-          <div class="gb-card-five-card-title-time">
-            <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">Joined KTH Innovations Pre-incubator</h3>
-            <p class="gb-subtitle-small gb-text-dark-blue">31.May.2017</p>
-          </div>
-          <div class="article-title">
-            <h4 class="gb-title-medium">The KTH Innovation pre-incubator program is a yearlong program for early-stage, tech-based projects from KTH, one of the best technical universities in the World, looking to speed up their development.</h4>
-          </div>
-        </div>
-        <div class="gb-card-five-wrapper-article-image">
-          <img src="images/Pre-incubator.jpg" alt="Joined KTH Innovations Pre-incubator">
-        </div>
-      </li>
-      <li class="gb-card-five-card">
-        <div class="gb-card-five-card-icon">
-          <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <use xlink:href="#bookmarks"></use>
-          </svg>
-        </div>
-        <div class="gb-card-five-card-content">
-          <div class="gb-card-five-card-title-time">
-            <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">Featured by Mighty Networks</h3>
-            <p class="gb-subtitle-small gb-text-dark-blue">01.Apr.2017</p>
-          </div>
-          <div class="article-title">
-            <h4 class="gb-title-medium">Globuzzer has also been selected as a successful showcase in Silicon Valley by the hosted social network builder company Mighty Networks.</h4>
-          </div>
-        </div>
-        <div class="gb-card-five-wrapper-article-image">
-          <img src="images/mightynetwork.jpg" alt="Featured by Mighty Networks">
-        </div>
-      </li>
-    </ul>
-    </div>
-    
-     <div class='gb-card-five-day'>
+
+        <div class='gb-card-five-day'>
           <div class='gb-card-five-day-head'>
             <h2 class='gb-card-five-day-title'>2016</h2>
           </div>
-    <ul class="gb-card-five-cards">
-      <li class="gb-card-five-card">
-        <div class="gb-card-five-card-icon">
-          <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <use xlink:href="#bookmarks"></use>
-          </svg>
+          <ul class="gb-card-five-cards">
+            <li class="gb-card-five-card">
+              <div class="gb-card-five-card-icon">
+                <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="#bookmarks"></use>
+                </svg>
+              </div>
+              <div class="gb-card-five-card-content">
+                <div class="gb-card-five-card-title-time">
+                  <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">The launch of SkillScanner Project</h3>
+                  <p class="gb-subtitle-small gb-text-dark-blue">11.Dec.2016</p>
+                </div>
+                <div class="article-title">
+                  <h4 class="gb-title-medium">SkillScanner offers a range of suitable English-speaking jobs, being a network
+                    where people can share their own experiences of job searching.</h4>
+                </div>
+              </div>
+              <div class="gb-card-five-wrapper-article-image">
+                <img src="images/skillscanner.jpg" alt="launch of SkillScanner">
+              </div>
+            </li>
+            <li class="gb-card-five-card">
+              <div class="gb-card-five-card-icon">
+                <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="#bookmarks"></use>
+                </svg>
+              </div>
+              <div class="gb-card-five-card-content">
+                <div class="gb-card-five-card-title-time">
+                  <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">Participation in Armada</h3>
+                  <p class="gb-subtitle-small gb-text-dark-blue">26.Nov.2016</p>
+                </div>
+                <div class="article-title">
+                  <h4 class="gb-title-medium">Armada arranges Scandinavia's largest career fair at KTH Royal Institute of
+                    Technology. Every year, more than 12,000 of Sweden's top engineering and architectural students flock
+                    to visit the fair to meet their future employers. Each year they strive to exceed their expectations
+                    and to give both students and employees the best possible chance to interact.</h4>
+                </div>
+              </div>
+              <div class="gb-card-five-wrapper-article-image">
+                <img src="images/Armada.jpg" alt="Participation in Armada">
+              </div>
+            </li>
+            <li class="gb-card-five-card">
+              <div class="gb-card-five-card-icon">
+                <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="#bookmarks"></use>
+                </svg>
+              </div>
+              <div class="gb-card-five-card-content">
+                <div class="gb-card-five-card-title-time">
+                  <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">The launch of Globuzzer</h3>
+                  <p class="gb-subtitle-small gb-text-dark-blue">26.Aug.2016</p>
+                </div>
+                <div class="article-title">
+                  <h4 class="gb-title-medium"></h4>
+                </div>
+              </div>
+              <div class="gb-card-five-wrapper-article-image">
+                <img src="images/gb-launch.jpg" alt="launch of Globuzzer">
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="gb-card-five-card-content">
-          <div class="gb-card-five-card-title-time">
-            <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">The launch of SkillScanner Project</h3>
-            <p class="gb-subtitle-small gb-text-dark-blue">11.Dec.2016</p>
-          </div>
-          <div class="article-title">
-            <h4 class="gb-title-medium">SkillScanner offers a range of suitable English-speaking jobs, being a network where people can share their own experiences of job searching.</h4>
-          </div>
-        </div>
-        <div class="gb-card-five-wrapper-article-image">
-          <img src="images/skillscanner.jpg" alt="launch of SkillScanner">
-        </div>
-      </li>
-      <li class="gb-card-five-card">
-        <div class="gb-card-five-card-icon">
-          <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <use xlink:href="#bookmarks"></use>
-          </svg>
-        </div>
-        <div class="gb-card-five-card-content">
-          <div class="gb-card-five-card-title-time">
-            <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">Participation in Armada</h3>
-            <p class="gb-subtitle-small gb-text-dark-blue">26.Nov.2016</p>
-          </div>
-          <div class="article-title">
-            <h4 class="gb-title-medium">Armada arranges Scandinavia's largest career fair at KTH Royal Institute of Technology. Every year, more than 12,000 of Sweden's top engineering and architectural students flock to visit the fair to meet their future employers. Each year they strive to exceed their expectations and to give both students and employees the best possible chance to interact.</h4>
-          </div>
-        </div>
-        <div class="gb-card-five-wrapper-article-image">
-          <img src="images/Armada.jpg" alt="Participation in Armada">
-        </div>
-      </li>
-      <li class="gb-card-five-card">
-        <div class="gb-card-five-card-icon">
-          <svg class="gb-card-five-card-bookmark-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <use xlink:href="#bookmarks"></use>
-          </svg>
-        </div>
-        <div class="gb-card-five-card-content">
-          <div class="gb-card-five-card-title-time">
-            <h3 class="gb-title-tiny gb-text-red gb-text-capitalize">The launch of Globuzzer</h3>
-            <p class="gb-subtitle-small gb-text-dark-blue">26.Aug.2016</p>
-          </div>
-          <div class="article-title">
-            <h4 class="gb-title-medium"></h4>
-          </div>
-        </div>
-        <div class="gb-card-five-wrapper-article-image">
-          <img src="images/gb-launch.jpg" alt="launch of Globuzzer">
-        </div>
-      </li>
-    </ul>
+
       </div>
 
-  </div>
-  
-  <!-- TIMELINE SECTION ENDS -->
-  
-  <!-- PARTNERS SECTION STARTS -->
-  
-  
-        <h1 class='gb-margin-bottom-16 gb-margin-top-40 gb-text-dark-blue gb-title-xx-large gb-text-center gb-text-uppercase'>Our partners</h1>
-      <p class='gb-margin-bottom-40 gb-margin-top-16 gb-paragraph-medium gb-text-black gb-text-center'>Together with our partners, Globuzzer caters to the needs of travelers, students and expats.</p>
+      <!-- TIMELINE SECTION ENDS -->
 
-  
-   	  <div class="gb-images-inline-container gb-margin-bottom-40">
-     		 <div class="gb-images-inline">
-               <a target="_blank" href="http://www.uksw.edu/en.php"> 
-     			 <img src="images/logo-university-partner.png" alt="University logo">
-               </a>
-     		 </div>
-            <div class="gb-images-inline">
-               <a target="_blank" href="https://www.kth.se/">
-               			<img src="images/KTH-partner.png" alt="KTH logo">
-                 </a>
-     		 </div>
-              <div class="gb-images-inline">
-               <a target="_blank" href="http://www.friidesigns.com">
-               		<img src="images/Frii-Designs-partner.png" alt="Frii design logo"> 
-               </a>
-     		 </div>
-              <div class="gb-images-inline">
-               <a target="_blank" href="https://www.vikingline.fi/">
-               		<img src="images/viking-line-partner.png" alt="Vikingline logo">
-               </a>
-     		 </div>
-              <div class="gb-images-inline">
-               <a target="_blank" href="https://mightynetworks.com/">
-               		<img src="images/mighty-network-partner.png" alt="Mighty network logo">
-               </a>
-     		 </div>
+      <!-- PARTNERS SECTION STARTS -->
+
+      <div id='parteners'>
+        <h1 class='gb-margin-bottom-16 gb-margin-top-40 gb-text-dark-blue gb-title-xx-large gb-text-center gb-text-uppercase'>Our
+          partners
+        </h1>
+        <p class='gb-margin-bottom-40 gb-margin-top-16 gb-paragraph-medium gb-text-black gb-text-center'>Together with our
+          partners, Globuzzer caters to the needs of travelers, students and expats.</p>
+
+
+        <div class="gb-images-inline-container gb-margin-bottom-40">
+          <div class="gb-images-inline">
+            <a target="_blank" href="http://www.uksw.edu/en.php">
+              <img src="images/logo-university-partner.png" alt="University logo">
+            </a>
+          </div>
+          <div class="gb-images-inline">
+            <a target="_blank" href="https://www.kth.se/">
+              <img src="images/KTH-partner.png" alt="KTH logo">
+            </a>
+          </div>
+          <div class="gb-images-inline">
+            <a target="_blank" href="http://www.friidesigns.com">
+              <img src="images/Frii-Designs-partner.png" alt="Frii design logo">
+            </a>
+          </div>
+          <div class="gb-images-inline">
+            <a target="_blank" href="https://www.vikingline.fi/">
+              <img src="images/viking-line-partner.png" alt="Vikingline logo">
+            </a>
+          </div>
+          <div class="gb-images-inline">
+            <a target="_blank" href="https://mightynetworks.com/">
+              <img src="images/mighty-network-partner.png" alt="Mighty network logo">
+            </a>
+          </div>
+        </div>
       </div>
-  
-  <!-- PARTNERS SECTION ENDS -->
-  
-  
-  
-  <!-- FEEDBACK SECTION STARTS -->
-  
-      <div class="gb-gradient-red-black border-box">
-          
-        <div class="gb-page-content-center">
-               
-          <form class="gb-form-350" method="post" action="send-email.php">
-        <h1 class='gb-margin-bottom-16 gb-margin-top-40 gb-text-white gb-title-xx-large gb-text-center gb-text-uppercase'>Contact us</h1>
-      <p class='gb-margin-bottom-24 gb-margin-top-16 gb-paragraph-medium gb-text-white gb-text-center'>If you have any questions, please don't hesitate to contact us..</p>
-                 <div class='gb-input-wrapper-relative'>
-                 <label for="name">
-         			<svg class="gb-input-icon-left" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <use xlink:href="#profile"></use>
-              </svg> 
-              </label>           		
-           		    <input class="gb-input-primary gb-input-background-transparent" id="name" name="name" type="text" placeholder="Name" required>
-     			</div>
-                
-                  <div class='gb-input-wrapper-relative'>
-                    <label for="email">
+      <!-- PARTNERS SECTION ENDS -->
 
-         			 <svg class='gb-input-icon-left' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<use xlink:href='#email'></use>
-					</svg>
-                    </label>
-           		    <input class="gb-input-primary gb-input-background-transparent" id="email" name="email"  type="email" id="email" placeholder="Email" required>
-     			</div>
-                  <div class='gb-input-wrapper-relative'>
-                      <label for="subject">
-         			 	<svg class='gb-input-icon-left' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-					<use xlink:href='#name-lines'></use>
-				  </svg> 
-                  </label>
-           		    <input class="gb-input-primary gb-input-background-transparent" id="subject" name="subject" type="text"  placeholder="Subject" required>
-     			</div>
-                
-               <div class='gb-input-wrapper-relative'>
-                     <label for="message">
-         			 	<svg class='gb-input-icon-top' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-					<use xlink:href='#name-lines'></use>
-				  </svg>
-                  </label> 
-           		    <textarea class="gb-input-textarea-primary gb-input-background-transparent" id="message" name="message" placeholder="Message" required></textarea>
-     			</div>
-                
-                
-                <div class="gb-input-wrapper-relative gb-margin-bottom-32">
-                   <button type="submit" class="gb-btn gb-btn-large gb-btn-primary" >Submit</button>
-               </div>
-          </form>
-       
-          
-    </div>
-     <div class="map-wrapper">
-		<div id="map_canvas"></div>
-     </div>
-    </div> 
-    
-     
-  
- <!-- FEEDBACK SECTION ENDS -->
- 
-    <!-- Footer Start -->
-    <div class="gb-footer gb-background-black-opacity-5">
-      <div class="footer-wrapper">
-        <div class='footer-top-content'>
+
+
+      <!-- FEEDBACK SECTION STARTS -->
+      <div id='contact-us'>
+        <div class="gb-gradient-red-black border-box">
+
+          <div class="gb-page-content-center">
+
+            <form class="gb-form-350" method="post" action="send-email.php">
+              <h1 class='gb-margin-bottom-16 gb-margin-top-40 gb-text-white gb-title-xx-large gb-text-center gb-text-uppercase'>Contact
+                us
+              </h1>
+              <p class='gb-margin-bottom-24 gb-margin-top-16 gb-paragraph-medium gb-text-white gb-text-center'>If you have
+                any questions, please don't hesitate to contact us..</p>
+              <div class='gb-input-wrapper-relative'>
+                <label for="name">
+                  <svg class="gb-input-icon-left" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="#profile"></use>
+                  </svg>
+                </label>
+                <input class="gb-input-primary gb-input-background-transparent" id='name' name="name" type="text" placeholder="Name" required>
+              </div>
+
+              <div class='gb-input-wrapper-relative'>
+                <label for="email">
+
+                  <svg class='gb-input-icon-left' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href='#email'></use>
+                  </svg>
+                </label>
+                <input class="gb-input-primary gb-input-background-transparent" id='email' name="email" type="email" id="email" placeholder="Email"
+                  required>
+              </div>
+              <div class='gb-input-wrapper-relative'>
+                <label for="subject">
+                  <svg class='gb-input-icon-left' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href='#name-lines'></use>
+                  </svg>
+                </label>
+                <input class="gb-input-primary gb-input-background-transparent" id='subject' name="subject" type="text" placeholder="Subject" required>
+              </div>
+
+              <div class='gb-input-wrapper-relative'>
+                <label for="message">
+                  <svg class='gb-input-icon-top' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href='#name-lines'></use>
+                  </svg>
+                </label>
+                <textarea class="gb-input-textarea-primary gb-input-background-transparent" id="message" name="message" placeholder="Message" required></textarea>
+              </div>
+
+
+              <div class="gb-input-wrapper-relative gb-margin-bottom-32">
+                <button type="submit" class="gb-btn gb-btn-large gb-btn-primary">Submit</button>
+              </div>
+            </form>
+
+
+          </div>
+          <div class="map-wrapper">
+            <div id="map_canvas"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- FEEDBACK SECTION ENDS -->
+
+      <!-- Footer Start -->
+      <div class="gb-footer gb-background-black-opacity-5">
+        <div class="footer-wrapper">
+          <div class='footer-top-content'>
             <ul class='footer-nav gb-phone-hide gb-tablet-hide'>
-                <li class="footer-nav-item gb-margin-bottom-8">
-                  <a class="gb-text-black-opacity-50 gb-subtitle-medium" href="https://mightynetworks.com/terms_of_use">
-                    Terms &amp; Conditions
-                  </a>
-                </li>
-                <li class="footer-nav-item gb-margin-bottom-8">
-                  <a class="gb-text-black-opacity-50 gb-subtitle-medium" href="https://mightynetworks.com/privacy_policy">
-                    Privacy Policy
-                  </a>
-                </li>
-              </ul>
-          <ul class="footer-contact-list">
-            <li class='footer-contact-item gb-margin-bottom-8'>
-              <a class='footer-contact-link' href='href="https://www.google.com/maps/place/Skyttev%C3%A4gen+29,+133+36+Saltsj%C3%B6baden,+Ruotsi/@59.2707216,18.2862762,17z/data=!3m1!4b1!4m5!3m4!1s0x465f7f0cd4f5b7b3:0x75deb43dec7d4645!8m2!3d59.2707216!4d18.2884649"'>
-                <svg class="gb-icon-fill-black-opacity-30 gb-icon-small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <use xlink:href="#location"></use>
-                </svg>
-                <p class='gb-text-black-opacity-50 gb-subtitle-medium'>Skyttevägen 29, Saltsjöbaden, Sweden</p>
-              </a>
-            </li>
-            <li class='footer-contact-item gb-margin-bottom-8'>
-              <a class='footer-contact-link' href='tel:46735555134'>
-                <svg class="gb-icon-fill-black-opacity-30 gb-icon-small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <use xlink:href="#phone"></use>
-                </svg>
-                <p class='gb-text-black-opacity-50 gb-subtitle-medium'>+46 73 555 5 134</p>
-              </a>
-            </li>
-            <li class='footer-contact-item gb-margin-bottom-8'>
-              <a class='footer-contact-link' href='mailto:info@globuzzer.com'>
-                <svg class="gb-icon-fill-black-opacity-30 gb-icon-small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <use xlink:href="#envelope"></use>
-                </svg>
-                <p class='gb-text-black-opacity-50 gb-subtitle-medium'>info@globuzzer.com</p>
-              </a>
-            </li>
-          </ul>
-
-
-          <ul class="footer-social-media-list">
-            <li class="footer-social-media-item">
-              <a class='footer-contact-link' href="https://www.facebook.com/SocialNetworkforStudentsandExpats/?hc_ref=ARTpukVVg9pLASlFEgSEGsyb34HwQIISr3bQWcT-CghqMvRc2ccJmEMvOT4qVL7plus&__xts__[0]=68.ARAied8czZYuUH1SnAAN-tgadfzqVniY7HZvUHyax0rpZF33Xm97dZKIPU_3iBvcxypV5tTXGHDoy1aI-ZKVuoQ2L7nhf-RjbgQrrwX3FR93GfT85bpmIWr8ObZRBGqTdv1-IYLxVty6zPOYRG-0eRTzdoIxCsrQWIt1u_gqNVOKlCpQwLTe&__tn__=%3C-R">
-                <svg class="gb-icon-fill-black-opacity-30 gb-icon-medium" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <use xlink:href="#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-media-item">
-              <a class='footer-contact-link' href="https://twitter.com/globuzzer">
-                <svg class="gb-icon-fill-black-opacity-30 gb-icon-medium" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <use xlink:href="#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-media-item">
-              <a class='footer-contact-link' href="https://www.youtube.com/channel/UC4u8N-QBDMWG6OqzSni8clw">
-                <svg class="gb-icon-fill-black-opacity-30 gb-icon-medium" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <use xlink:href="#youtube"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-media-item">
-              <a class='footer-contact-link' href="https://www.linkedin.com/company/globuzzer/">
-                <svg class="gb-icon-fill-black-opacity-30 gb-icon-medium" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <use xlink:href="#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-media-item">
-              <a class='footer-contact-link' href="https://www.pinterest.se/globuzzer/pins/">
-                <svg class="gb-icon-fill-black-opacity-30 gb-icon-medium" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <use xlink:href="#pinterest"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-media-item">
-              <a class='footer-contact-link' href="https://www.instagram.com/globuzzer/">
-                <svg class="gb-icon-fill-black-opacity-30 gb-icon-medium" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <use xlink:href="#instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-
-
-
-        </div>
-        <div class='footer-bottom-content'>
-          <div class="footer-rights-reserved">
-            <div class='left-content'>
-              <p class="gb-label gb-text-black-opacity-30">© 2018 All rights reserved.</p>
-            </div>
-            <ul class='right-content gb-desktop-hide'>
-              <li class="footer-nav-item">
-                <a class="gb-text-black-opacity-30 gb-subtitle-medium" href="https://mightynetworks.com/terms_of_use">
+              <li class="footer-nav-item gb-margin-bottom-8">
+                <a class="gb-text-black-opacity-50 gb-subtitle-medium" href="https://mightynetworks.com/terms_of_use">
                   Terms &amp; Conditions
                 </a>
               </li>
-              <li class="footer-nav-item">
-                <a class="gb-text-black-opacity-30 gb-subtitle-medium" href="https://mightynetworks.com/privacy_policy">
+              <li class="footer-nav-item gb-margin-bottom-8">
+                <a class="gb-text-black-opacity-50 gb-subtitle-medium" href="https://mightynetworks.com/privacy_policy">
                   Privacy Policy
                 </a>
               </li>
             </ul>
+            <ul class="footer-contact-list">
+              <li class='footer-contact-item gb-margin-bottom-8'>
+                <a class='footer-contact-link' href='href="https://www.google.com/maps/place/Skyttev%C3%A4gen+29,+133+36+Saltsj%C3%B6baden,+Ruotsi/@59.2707216,18.2862762,17z/data=!3m1!4b1!4m5!3m4!1s0x465f7f0cd4f5b7b3:0x75deb43dec7d4645!8m2!3d59.2707216!4d18.2884649"'>
+                  <svg class="gb-icon-fill-black-opacity-30 gb-icon-small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="#location"></use>
+                  </svg>
+                  <p class='gb-text-black-opacity-50 gb-subtitle-medium'>Skyttevägen 29, Saltsjöbaden, Sweden</p>
+                </a>
+              </li>
+              <li class='footer-contact-item gb-margin-bottom-8'>
+                <a class='footer-contact-link' href='tel:46735555134'>
+                  <svg class="gb-icon-fill-black-opacity-30 gb-icon-small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="#phone"></use>
+                  </svg>
+                  <p class='gb-text-black-opacity-50 gb-subtitle-medium'>+46 73 555 5 134</p>
+                </a>
+              </li>
+              <li class='footer-contact-item gb-margin-bottom-8'>
+                <a class='footer-contact-link' href='mailto:info@globuzzer.com'>
+                  <svg class="gb-icon-fill-black-opacity-30 gb-icon-small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="#envelope"></use>
+                  </svg>
+                  <p class='gb-text-black-opacity-50 gb-subtitle-medium'>info@globuzzer.com</p>
+                </a>
+              </li>
+            </ul>
+
+
+            <ul class="footer-social-media-list">
+              <li class="footer-social-media-item">
+                <a class='footer-contact-link' href="https://www.facebook.com/SocialNetworkforStudentsandExpats/?hc_ref=ARTpukVVg9pLASlFEgSEGsyb34HwQIISr3bQWcT-CghqMvRc2ccJmEMvOT4qVL7plus&__xts__[0]=68.ARAied8czZYuUH1SnAAN-tgadfzqVniY7HZvUHyax0rpZF33Xm97dZKIPU_3iBvcxypV5tTXGHDoy1aI-ZKVuoQ2L7nhf-RjbgQrrwX3FR93GfT85bpmIWr8ObZRBGqTdv1-IYLxVty6zPOYRG-0eRTzdoIxCsrQWIt1u_gqNVOKlCpQwLTe&__tn__=%3C-R">
+                  <svg class="gb-icon-fill-black-opacity-30 gb-icon-medium" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-media-item">
+                <a class='footer-contact-link' href="https://twitter.com/globuzzer">
+                  <svg class="gb-icon-fill-black-opacity-30 gb-icon-medium" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-media-item">
+                <a class='footer-contact-link' href="https://www.youtube.com/channel/UC4u8N-QBDMWG6OqzSni8clw">
+                  <svg class="gb-icon-fill-black-opacity-30 gb-icon-medium" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-media-item">
+                <a class='footer-contact-link' href="https://www.linkedin.com/company/globuzzer/">
+                  <svg class="gb-icon-fill-black-opacity-30 gb-icon-medium" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-media-item">
+                <a class='footer-contact-link' href="https://www.pinterest.se/globuzzer/pins/">
+                  <svg class="gb-icon-fill-black-opacity-30 gb-icon-medium" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="#pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-media-item">
+                <a class='footer-contact-link' href="https://www.instagram.com/globuzzer/">
+                  <svg class="gb-icon-fill-black-opacity-30 gb-icon-medium" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+
+
+          </div>
+          <div class='footer-bottom-content'>
+            <div class="footer-rights-reserved">
+              <div class='left-content'>
+                <p class="gb-label gb-text-black-opacity-30">© 2018 All rights reserved.</p>
+              </div>
+              <ul class='right-content gb-desktop-hide'>
+                <li class="footer-nav-item">
+                  <a class="gb-text-black-opacity-30 gb-subtitle-medium" href="https://mightynetworks.com/terms_of_use">
+                    Terms &amp; Conditions
+                  </a>
+                </li>
+                <li class="footer-nav-item">
+                  <a class="gb-text-black-opacity-30 gb-subtitle-medium" href="https://mightynetworks.com/privacy_policy">
+                    Privacy Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+      <!-- Footer End -->
     </div>
-    <!-- Footer End -->
-
   </div>
- </div>
   <script src="scripts/jquery-latest.min.js"></script>
   <script type="text/javascript" src="scripts/live-search.js" defer></script>
-
   <script type='text/javascript' src='scripts/videoJS/node_modules/video.js/dist/video.min.js'></script>
   <script type='text/javascript' src='scripts/videoJS/dist/Youtube.min.js'></script>
   <script type='text/javascript' src='scripts/image-carousel-1.js'></script>

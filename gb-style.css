@@ -9,7 +9,16 @@
 
 body{
 	overflow-x: hidden;
+}
+
+.gb-app-wrapper{
+	overflow-x: hidden;
 	width: 100%;
+}
+
+textarea{
+	outline: none;
+	border: none;
 }
 
 a {
@@ -17,11 +26,6 @@ a {
 }
 
 input{
-	outline: none;
-	border: none;
-}
-
-textarea{
 	outline: none;
 	border: none;
 }
@@ -538,14 +542,14 @@ svg {
 }
 
 .gb-title-xx-large {
-	font-size: 20px;
-	line-height: 25px;
+	font-size: 25px;
+	line-height: 30px;
 }
 
 @media screen and (min-width: 440px) {
 	.gb-title-xx-large {
-		font-size: 25px;
-		line-height: 30px;
+		font-size: 30px;
+		line-height: 35px;
 	}
 }
 
@@ -565,8 +569,8 @@ svg {
 
 @media screen and (min-width: 1920px) {
 	.gb-title-xx-large {
-		font-size: 55px;
-		line-height: 60px;
+		font-size: 50px;
+		line-height: 55px;
 	}
 }
 
@@ -1101,6 +1105,20 @@ svg {
 
 /* Avatars end */
 
+/* gb-shadow start */
+
+.gb-shadow-large {
+	-webkit-box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.gb-shadow-large.gb-hover:hover{
+		-webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);	
+}
+
+/* gb-shadow end */
+
 /* Buttons start */
 
 .gb-btn {
@@ -1520,9 +1538,6 @@ input.gb-swithcer-checkbox:checked+.gb-switcher-slider:before {
 	background-image: url(images/profile.jpg)
 }
 
-.gb-navbar .nav-burger {
-	margin-right: 20px;
-}
 
 .gb-label-icon {
 	margin-right: 5px;
@@ -1634,6 +1649,7 @@ input.gb-swithcer-checkbox:checked+.gb-switcher-slider:before {
 	-ms-flex-preferred-size: calc(100vh - 70px);
 	    flex-basis: calc(100vh - 70px);
 	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 .gb-nav-aside .nav-aside-content-bottom {
@@ -2008,7 +2024,7 @@ input.gb-swithcer-checkbox:checked+.gb-switcher-slider:before {
 /* gb-image-carousel-1 start */
 
 .gb-image-carousel-1 {
-	width: 100vw;
+	width: 100%;
 	overflow: hidden;
 	max-width: 1024px;
 	margin: 0 auto;
@@ -2644,8 +2660,8 @@ li.footer-contact-item .footer-contact-link svg{
           flex-grow: 1;
   height: 40px;
   font-size: 15px;
-  margin: 0 20px;
-  border-radius: 50px;
+	margin: 0 20px;
+	border-radius: 50px;
   padding-left: 45px;
   margin: 0px 1px 0 -32px;
 }
@@ -3046,8 +3062,8 @@ li.footer-contact-item .footer-contact-link svg{
 /**gb card three starts**/
 
 .map-wrapper {
- height: 75vh;
- width: 100%;	
+	height: 75vh;
+	width: 100%;	
 }
 
 #map_canvas {
@@ -3224,7 +3240,6 @@ li.footer-contact-item .footer-contact-link svg{
   margin-left: 8px;
   margin-right: 8px;
 }
-
 @media screen and (min-width: 600px) {
   .gb-card-five-wrapper {
     max-width: 800px;
@@ -3708,8 +3723,6 @@ object-fit: cover;
 	min-width: 210px;
 	padding: 20px 10px;
 	box-sizing: border-box;
-	-webkit-box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
-	box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
 	margin: 0 10px;
 	display: inline-block;
 	height: 330px;
@@ -3717,16 +3730,16 @@ object-fit: cover;
 	transition: .1s ease-in-out all;
 }
 
-.gb-card-15:hover{
-	-webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
-	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);	
-}
 
 .gb-card-15 .card-15-content{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;	
+}
+
+.gb-card-15.coming-soon{
+	user-select: none;
 }
 
 .gb-card-15.coming-soon .coming-soon {
@@ -3778,11 +3791,23 @@ object-fit: cover;
 	display: flex;
 	flex-wrap: nowrap;
 	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
 	padding: 50px 20px;
 	box-sizing: border-box;
 	max-width: 1024px;
 	margin: 0 auto;
 }
+
+.card-16-list .empty-filled-width-fix{
+	width: 20px;
+	height: 50px;
+	display: none;
+}
+
+.card-16-list .shown .empty-filled-width-fix{
+	display: block;
+}
+
 
 .card-16-list .gb-card-15{
 	white-space: initial;
