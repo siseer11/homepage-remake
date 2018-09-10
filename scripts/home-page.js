@@ -138,7 +138,3 @@ function init(){
 	window.addEventListener('resize' , debounce(listToBeFixedListener));
 
 }
-
-
-
-init();

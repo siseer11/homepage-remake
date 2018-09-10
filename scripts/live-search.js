@@ -1,8 +1,3 @@
-// live search starts //
-
-
-// live search ends //
-
 jQuery(document).ready(function($){
 
 $('.live-search-list li').each(function(){
@@ -16,10 +11,9 @@ var searchTerm = $(this).val().toLowerCase();
     $('.live-search-list li').each(function(){
 
         if ($(this).filter('[data-search-term ^=' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
-		$(this).addClass( "gb-search-result" );
             $(this).show();
         } else {
-            $(this).hide();
+            $(this).css('display', 'none');
         }
 
     });
@@ -27,4 +21,3 @@ var searchTerm = $(this).val().toLowerCase();
 });
 
 });
-

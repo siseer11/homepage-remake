@@ -2,13 +2,33 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <!-- set the encoding of your site -->
+  <meta charset="utf-8">
+  <!-- set the viewport width and initial-scale on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Globuzzer - World First Travelers Social Network</title>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="title" content="Globuzzer - World First Travelers Social Network">
+  <meta name="description" content="Globuzzer is the World's First Travelers' Social Network , here you can share your travel stories and get a full travel information from other nomads">
+  <meta name="keywords" content="globuzzer, traveler social network, social network for travelers">
+  <meta name="language" content="en">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta content="Globuzzer - World First Travelers Social Network" property="og:title">
+  <meta content="Globuzzer is the World's First Travelers' Social Network , here you can share your travel stories and get a full travel information from other nomads"
+    property="og:description">
+  <meta content="Globuzzer" property="og:site_name">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.globuzzer.com">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="./images/screenshot-globuzzer.jpg" name="twitter:image">
+  <meta content="Globuzzer - World First Travelers Social Network" name="twitter:title">
+  <meta content="Globuzzer is the World's First Travelers' Social Network , here you can share your travel stories and get a full travel information from other nomads"
+    name="twitter:description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type='text/css' href="gb-style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="scripts/videoJS/node_modules/video.js/dist/video-js.min.css" />
-  <title>Home-rework</title>
 </head>
 
 <body>
@@ -143,7 +163,8 @@
             </div>
           </form>
           <a href='https://globuzzer.mn.co/sign_up' class='btn gb-btn gb-btn-green gb-btn-medium gb-text-uppercase'>Join
-            us</a>
+            us
+          </a>
           <div class='gb-card-info-bottom'>
             <div class='content-piece'>
               <h2 class='gb-text-white gb-desktop-title-large gb-title-medium'>17k</h2>
@@ -185,19 +206,28 @@
       <!-- How-to-join end-->
 
       <!-- CITY SECTION START -->
-      <div id='city-sections' class="gb-page-content-center gb-flex-direction-column">
+      <div class="gb-page-content-center gb-flex-direction-column">
         <h1 class='gb-margin-bottom-40 gb-margin-top-40 gb-text-black gb-title-xx-large gb-text-center gb-text-uppercase'>city
-          section
-        </h1>
-        <div class="gb-input-wrapper">
-          <input class="gb-text-input-outlined-red live-search-box" type='text' placeholder='Search cities here...' />
-        </div>
+          section</h1>
+
+
+
+      </div>
+      <div class="gb-input-wrapper gb-margin-bottom-32">
+        <label class="gb-input-icon-left-black" for="search-input">
+          <svg class="attachement-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <use xlink:href="#search"></use>
+          </svg>
+        </label>
+        <input class="gb-text-input-outlined-red live-search-box" id="search-input" type='text' placeholder='Search cities here...'
+        />
       </div>
       <div class="gb-card-six-wrapper">
         <ul class="gb-card-six live-search-list">
 
-          <li class="gb-card-six-image">
-            <div class="gb-card-six-background-image"><img src="images/stockholm.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+          <li onclick="window.location.href.target=window.open('http://www.globuzzer.com/stockholm.php');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/stockholm.jpg"><div class="background-gradient gb-gradient-white-black"></div>
             </div>
             <div class="gb-card-six-info">
               <p class="gb-phsix-title-tiny gb-title-large">Stockholm</p>
@@ -205,17 +235,18 @@
             </div>
             <div class="gb-card-six-avatars-wrapper">
               <div class="gb-title-small">
-                <p>followers</p>
+                <p>Members</p>
               </div>
               <div class="gb-card-six-follower-avatar">
-                <div class="gb-card-six-avatars-container"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img
-                    src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar"
-                    class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"></div>
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
               </div>
             </div>
           </li>
-          <li class="gb-card-six-image">
-            <div class="gb-card-six-background-image"><img src="images/oslo.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+          <li onclick="window.location.href.target=window.open('http://www.globuzzer.com/oslo.php');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/oslo.jpg"><div class="background-gradient gb-gradient-white-black"></div>
             </div>
             <div class="gb-card-six-info">
               <p class="gb-phsix-title-tiny gb-title-large">Oslo</p>
@@ -223,17 +254,18 @@
             </div>
             <div class="gb-card-six-avatars-wrapper">
               <div class="gb-title-small">
-                <p>followers</p>
+                <p>Members</p>
               </div>
               <div class="gb-card-six-follower-avatar">
-                <div class="gb-card-six-avatars-container"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img
-                    src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar"
-                    class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"></div>
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
               </div>
             </div>
           </li>
-          <li class="gb-card-six-image">
-            <div class="gb-card-six-background-image"><img src="images/helsinki.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+          <li onclick="window.location.href.target=window.open('http://www.globuzzer.com/helsinki.php');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/helsinki.jpg"><div class="background-gradient gb-gradient-white-black"></div>
             </div>
             <div class="gb-card-six-info">
               <p class="gb-phsix-title-tiny gb-title-large">Helsinki</p>
@@ -241,17 +273,18 @@
             </div>
             <div class="gb-card-six-avatars-wrapper">
               <div class="gb-title-small">
-                <p>followers</p>
+                <p>Members</p>
               </div>
               <div class="gb-card-six-follower-avatar">
-                <div class="gb-card-six-avatars-container"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img
-                    src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar"
-                    class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"></div>
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
               </div>
             </div>
           </li>
-          <li class="gb-card-six-image">
-            <div class="gb-card-six-background-image"><img src="images/London.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+          <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/195344');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/London.jpg"><div class="background-gradient gb-gradient-white-black"></div>
             </div>
             <div class="gb-card-six-info">
               <p class="gb-phsix-title-tiny gb-title-large">London</p>
@@ -259,17 +292,18 @@
             </div>
             <div class="gb-card-six-avatars-wrapper">
               <div class="gb-title-small">
-                <p>followers</p>
+                <p>Members</p>
               </div>
               <div class="gb-card-six-follower-avatar">
-                <div class="gb-card-six-avatars-container"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img
-                    src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar"
-                    class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"></div>
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
               </div>
             </div>
           </li>
-          <li class="gb-card-six-image">
-            <div class="gb-card-six-background-image"><img src="images/copenhagen.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+          <li onclick="window.location.href.target=window.open('http://www.globuzzer.com/copenhagen.php');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/copenhagen.jpg"><div class="background-gradient gb-gradient-white-black"></div>
             </div>
             <div class="gb-card-six-info">
               <p class="gb-phsix-title-tiny gb-title-large">Copenhagen</p>
@@ -277,17 +311,18 @@
             </div>
             <div class="gb-card-six-avatars-wrapper">
               <div class="gb-title-small">
-                <p>followers</p>
+                <p>Members</p>
               </div>
               <div class="gb-card-six-follower-avatar">
-                <div class="gb-card-six-avatars-container"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img
-                    src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar"
-                    class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"></div>
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
               </div>
             </div>
           </li>
-          <li class="gb-card-six-image">
-            <div class="gb-card-six-background-image"><img src="images/Rome.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+          <li onclick="window.location.href.target=window.open('http://www.globuzzer.com/rome.php');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/Rome.jpg"><div class="background-gradient gb-gradient-white-black"></div>
             </div>
             <div class="gb-card-six-info">
               <p class="gb-phsix-title-tiny gb-title-large">Rome</p>
@@ -295,17 +330,18 @@
             </div>
             <div class="gb-card-six-avatars-wrapper">
               <div class="gb-title-small">
-                <p>followers</p>
+                <p>Members</p>
               </div>
               <div class="gb-card-six-follower-avatar">
-                <div class="gb-card-six-avatars-container"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img
-                    src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar"
-                    class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"></div>
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
               </div>
             </div>
           </li>
-          <li class="gb-card-six-image">
-            <div class="gb-card-six-background-image"><img src="images/Bogota.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+          <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/569795');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/Bogota.jpg"><div class="background-gradient gb-gradient-white-black"></div>
             </div>
             <div class="gb-card-six-info">
               <p class="gb-phsix-title-tiny gb-title-large">Bogota</p>
@@ -313,17 +349,18 @@
             </div>
             <div class="gb-card-six-avatars-wrapper">
               <div class="gb-title-small">
-                <p>followers</p>
+                <p>Members</p>
               </div>
               <div class="gb-card-six-follower-avatar">
-                <div class="gb-card-six-avatars-container"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img
-                    src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar"
-                    class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"></div>
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
               </div>
             </div>
           </li>
-          <li class="gb-card-six-image">
-            <div class="gb-card-six-background-image"><img src="images/Milan.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+          <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/258697');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/Milan.jpg"><div class="background-gradient gb-gradient-white-black"></div>
             </div>
             <div class="gb-card-six-info">
               <p class="gb-phsix-title-tiny gb-title-large">Milan</p>
@@ -331,17 +368,18 @@
             </div>
             <div class="gb-card-six-avatars-wrapper">
               <div class="gb-title-small">
-                <p>followers</p>
+                <p>Members</p>
               </div>
               <div class="gb-card-six-follower-avatar">
-                <div class="gb-card-six-avatars-container"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img
-                    src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar"
-                    class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"></div>
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
               </div>
             </div>
           </li>
-          <li class="gb-card-six-image">
-            <div class="gb-card-six-background-image"><img src="images/Salatiga.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+          <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/588489');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/Salatiga.jpg"><div class="background-gradient gb-gradient-white-black"></div>
             </div>
             <div class="gb-card-six-info">
               <p class="gb-phsix-title-tiny gb-title-large">Salatiga</p>
@@ -349,17 +387,18 @@
             </div>
             <div class="gb-card-six-avatars-wrapper">
               <div class="gb-title-small">
-                <p>followers</p>
+                <p>Members</p>
               </div>
               <div class="gb-card-six-follower-avatar">
-                <div class="gb-card-six-avatars-container"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img
-                    src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar"
-                    class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"></div>
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
               </div>
             </div>
           </li>
-          <li class="gb-card-six-image">
-            <div class="gb-card-six-background-image"><img src="images/Barcelona.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+          <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/195835');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/Barcelona.jpg"><div class="background-gradient gb-gradient-white-black"></div>
             </div>
             <div class="gb-card-six-info">
               <p class="gb-phsix-title-tiny gb-title-large">Barcelona</p>
@@ -367,17 +406,18 @@
             </div>
             <div class="gb-card-six-avatars-wrapper">
               <div class="gb-title-small">
-                <p>followers</p>
+                <p>Members</p>
               </div>
               <div class="gb-card-six-follower-avatar">
-                <div class="gb-card-six-avatars-container"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img
-                    src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar"
-                    class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"></div>
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
               </div>
             </div>
           </li>
-          <li class="gb-card-six-image">
-            <div class="gb-card-six-background-image"><img src="images/Jakarta.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+          <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/244080');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/Jakarta.jpg"><div class="background-gradient gb-gradient-white-black"></div>
             </div>
             <div class="gb-card-six-info">
               <p class="gb-phsix-title-tiny gb-title-large">Jakarta</p>
@@ -385,17 +425,18 @@
             </div>
             <div class="gb-card-six-avatars-wrapper">
               <div class="gb-title-small">
-                <p>followers</p>
+                <p>2K+</p>
+                <p>Members</p>
               </div>
               <div class="gb-card-six-follower-avatar">
-                <div class="gb-card-six-avatars-container"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img
-                    src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar"
-                    class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"></div>
+                <div class="gb-card-six-avatars-container"></div>
               </div>
             </div>
           </li>
-          <li class="gb-card-six-image">
-            <div class="gb-card-six-background-image"><img src="images/Lisbon.jpg"><div class="background-gradient gb-gradient-white-black"></div>
+
+          <li onclick="window.location.href.target=window.open('https://globuzzer.mn.co/groups/446233');" class="gb-card-six-image">
+            <div
+              class="gb-card-six-background-image"><img src="images/Lisbon.jpg"><div class="background-gradient gb-gradient-white-black"></div>
             </div>
             <div class="gb-card-six-info">
               <p class="gb-phsix-title-tiny gb-title-large">Lisbon</p>
@@ -403,18 +444,15 @@
             </div>
             <div class="gb-card-six-avatars-wrapper">
               <div class="gb-title-small">
-                <p>followers</p>
+                <p>Members</p>
               </div>
               <div class="gb-card-six-follower-avatar">
-                <div class="gb-card-six-avatars-container"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img
-                    src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar"
-                    class="gb-avatar gb-avatar-small"><img src="images/profile.jpg" alt="avatar" class="gb-avatar gb-avatar-small"></div>
+                <div class="gb-card-six-avatars-container">
+                  <p>2K+</p>
+                </div>
               </div>
             </div>
           </li>
-
-
-
         </ul>
       </div>
 
@@ -422,7 +460,8 @@
 
       <!-- Video section start-->
       <div class='gb-video-section gb-padding-bottom-48 gb-margin-top-32 gb-padding-top-56'>
-        <h2 class='gb-text-center gb-text-black gb-title-xx-large gb-text-uppercase gb-margin-bottom-32 gb-margin-top-32 gb-padding-top-16'>Featured Videos</h2>
+        <h2 class='gb-text-center gb-text-black gb-title-xx-large gb-text-uppercase gb-margin-bottom-32 gb-margin-top-32 gb-padding-top-16'>Featured
+          Videos</h2>
         <div data-for='videosData' class='gb-image-carousel-1'>
           <ul class='carousel-1-images-list'>
           </ul>
@@ -459,7 +498,8 @@
               <img src='images/c4.png' alt='z' class='gb-card-15-img'>
               <h2 class='card-15-title gb-title-medium gb-text-black gb-text-capitalize'>Skillscanner</h2>
               <p class='card-15-paragraph gb-paragraph-small gb-text-black'>Daily job postings in the Nordics for English
-                speakers</p>
+                speakers
+              </p>
             </a>
           </li>
           <li class="gb-card-15 gb-border-radius-12 gb-background-white gb-text-center coming-soon gb-shadow-large">
@@ -491,7 +531,7 @@
       <div class="gb-card-five-wrapper">
         <div class='gb-card-five-day'>
           <div class='gb-card-five-day-head'>
-            <h2 class='gb-card-five-day-title'>YEAR 2018</h2>
+            <h2 class='gb-card-five-day-title'>2018</h2>
           </div>
           <ul class="gb-card-five-cards">
             <li class="gb-card-five-card">
@@ -536,7 +576,7 @@
         </div>
         <div class='gb-card-five-day'>
           <div class='gb-card-five-day-head'>
-            <h2 class='gb-card-five-day-title'>YEAR 2017</h2>
+            <h2 class='gb-card-five-day-title'>2017</h2>
           </div>
           <ul class="gb-card-five-cards">
             <li class="gb-card-five-card">
@@ -606,7 +646,7 @@
 
         <div class='gb-card-five-day'>
           <div class='gb-card-five-day-head'>
-            <h2 class='gb-card-five-day-title'>YEAR 2016</h2>
+            <h2 class='gb-card-five-day-title'>2016</h2>
           </div>
           <ul class="gb-card-five-cards">
             <li class="gb-card-five-card">
@@ -737,7 +777,7 @@
                     <use xlink:href="#profile"></use>
                   </svg>
                 </label>
-                <input class="gb-input-primary gb-input-background-transparent" name="name" type="text" placeholder="Name" required>
+                <input class="gb-input-primary gb-input-background-transparent" id='name' name="name" type="text" placeholder="Name" required>
               </div>
 
               <div class='gb-input-wrapper-relative'>
@@ -747,7 +787,7 @@
                     <use xlink:href='#email'></use>
                   </svg>
                 </label>
-                <input class="gb-input-primary gb-input-background-transparent" name="email" type="email" id="email" placeholder="Email"
+                <input class="gb-input-primary gb-input-background-transparent" id='email' name="email" type="email" id="email" placeholder="Email"
                   required>
               </div>
               <div class='gb-input-wrapper-relative'>
@@ -756,17 +796,16 @@
                     <use xlink:href='#name-lines'></use>
                   </svg>
                 </label>
-                <input class="gb-input-primary gb-input-background-transparent" name="subject" type="text" placeholder="Subject" required>
+                <input class="gb-input-primary gb-input-background-transparent" id='subject' name="subject" type="text" placeholder="Subject" required>
               </div>
 
               <div class='gb-input-wrapper-relative'>
                 <label for="message">
-                  <svg class='gb-input-icon-left' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <svg class='gb-input-icon-top' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <use xlink:href='#name-lines'></use>
                   </svg>
                 </label>
-                <input class="gb-input-textarea-primary gb-input-background-transparent" type="text" name="message" placeholder="Message"
-                  required>
+                <textarea class="gb-input-textarea-primary gb-input-background-transparent" id="message" name="message" placeholder="Message" required></textarea>
               </div>
 
 

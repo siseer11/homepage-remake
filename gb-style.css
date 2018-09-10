@@ -16,6 +16,11 @@ body{
 	width: 100%;
 }
 
+textarea{
+	outline: none;
+	border: none;
+}
+
 a {
 	text-decoration: none;
 }
@@ -803,6 +808,46 @@ svg {
 
 .gb-margin-top-40{
 	margin-top : 40px !important;
+}
+
+.gb-margin-left-8{
+	margin-left : 8px !important;
+}
+
+.gb-margin-left-16{
+	margin-left : 16px !important;
+}
+
+.gb-margin-left-24{
+	margin-left : 24px !important;
+}
+
+.gb-margin-left-32{
+	margin-left : 32px !important;
+}
+
+.gb-margin-left-40{
+	margin-left : 40px !important;
+}
+
+.gb-margin-right-8{
+	margin-right : 8px !important;
+}
+
+.gb-margin-right-16{
+	margin-right : 16px !important;
+}
+
+.gb-margin-right-24{
+	margin-right : 24px !important;
+}
+
+.gb-margin-right-32{
+	margin-right : 32px !important;
+}
+
+.gb-margin-right-40{
+	margin-right : 40px !important;
 }
 
 /* Margins end */
@@ -2538,7 +2583,6 @@ li.footer-contact-item .footer-contact-link svg{
 	
 .gb-form-350 {
   max-width: 350px;
-  min-width: 400px;
 }	
 
 .gb-input-primary {
@@ -2588,13 +2632,22 @@ li.footer-contact-item .footer-contact-link svg{
   position: absolute;
 } 
 
+.gb-input-icon-top  {
+  stroke: rgba(255,255,255,0.5);
+  fill: none;
+  top: -35px;
+  left: 15px;
+  width: 30px;
+  position: absolute;
+} 
+
 .gb-input-textarea-primary{
-  padding: 0 20px 0 60px;
+  padding: 20px 60px 0 60px;
   box-sizing: border-box;
   width: 100%;
-  height: 200px;
   border-radius: 20px;
   color: #fff;
+  height:200px;
 }	
 	 
 .gb-text-input-outlined-red {
@@ -2607,19 +2660,14 @@ li.footer-contact-item .footer-contact-link svg{
           flex-grow: 1;
   height: 40px;
   font-size: 15px;
-  margin: 0 20px;
+	margin: 0 20px;
+	border-radius: 50px;
+  padding-left: 45px;
+  margin: 0px 1px 0 -32px;
 }
 
 .gb-text-input-outlined-red::placeholder {
   color: #b1b1b1;
-}
-
-@media screen and (min-width: 700px) {
-.gb-text-input-outlined-red {
-    border-radius: 50px;
-	padding-left: 60px;
-	/*margin: 0px 1px 0 -38px; enable for right svg placement*/
-  }
 }
 
 .gb-text-input-area {
@@ -2637,15 +2685,14 @@ li.footer-contact-item .footer-contact-link svg{
   font-size: 16px;
 }
 
-.gb-file-attachment {
+.gb-input-icon-left-black {
   width: 40px;
   height: 40px;
   position: relative;
-  opacity: 0.3;
+  opacity: 0.6;
   -webkit-transition: 0.1s linear opacity;
   -o-transition: 0.1s linear opacity;
   transition: 0.1s linear opacity;
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2659,29 +2706,14 @@ li.footer-contact-item .footer-contact-link svg{
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+ left: 13px;
 }
 
-.gb-file-attachment:hover {
-  opacity: 0.8;
-}
-
-.gb-file-attachment svg {
-  width: 80%;
-  height: 80%;
+.gb-input-icon-left-black svg {
+  width: 60%;
+  height: 60%;
   stroke: rgb(0, 0, 0);
   fill: none;
-}
-
-@media screen and (min-width: 700px) {
-
-.gb-file-attachment {
-    lleft: 13px;
-}
-
-.gb-file-attachment svg {
-    width: 60%;
-    height: 60%;
-  }
 }
 
 .gb-input-file {
@@ -3030,10 +3062,8 @@ li.footer-contact-item .footer-contact-link svg{
 /**gb card three starts**/
 
 .map-wrapper {
- height: 50vh;
- width: 100%;
- box-sizing: border-box;
- padding: 5px 5px;	
+	height: 75vh;
+	width: 100%;	
 }
 
 #map_canvas {
@@ -3207,6 +3237,8 @@ li.footer-contact-item .footer-contact-link svg{
   min-height: 100vh;
   padding-top: 60px;
   position: relative;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 @media screen and (min-width: 600px) {
   .gb-card-five-wrapper {
@@ -3371,6 +3403,7 @@ li.footer-contact-item .footer-contact-link svg{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	cursor:pointer;
 }
 
 .gb-card-six-avatars-container > *{
