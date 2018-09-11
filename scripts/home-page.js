@@ -27,7 +27,6 @@ function init(){
 		}
 	});
 
-
 	/* Nav Bar */
 	const header = document.querySelector('.header');
 	const navBar = document.querySelector('.gb-navbar');
@@ -36,6 +35,26 @@ function init(){
 	/* Black overlay header */
 	const blackHeaderOverlay = document.querySelector('.header-black-overlay');
 
+	/* Sections holder, auto scroll on X*/
+	const sectionsHolder = document.querySelector('.gb-card-six');
+	let alreadyScrolled = false;
+	let scrollAt = 0;
+	let scrollXinerval;
+
+	let citySectionPassed = sectionsHolder.getBoundingClientRect().y + sectionsHolder.clientHeight/2 < 0; //initial scroll of the page is allready ove it if < 0 is passed
+
+	const scrollSectionX = () => {
+		scrollAt+=2;
+		sectionsHolder.scrollTo({
+			left: scrollAt
+		});
+		let sectionWidth = sectionsHolder.scrollWidth*0.2;
+		sectionWidth = sectionWidth > 150? 150 : sectionWidth;
+		
+		if(scrollAt >= sectionWidth){
+			clearInterval(scrollXinerval)
+		}
+	}
 	//Scroll effect
 	const scrolling = (e) => {
 		/* Script for the blackHeaderOverlay to change it's opacity */
@@ -55,6 +74,24 @@ function init(){
 		}else if(!isPassed && navBar.classList.contains('sticky')){
 			navBar.classList.remove('gb-background-primary' , 'sticky')
 			navBar.classList.add('gb-background-transparent');
+		}
+
+
+		/* Script that autoscroll when half of the sections is in the view */
+		if(!alreadyScrolled){
+			let sectionsDistanceFromTop
+			
+			if(citySectionPassed){
+				sectionsDistanceFromTop = - (sectionsHolder.getBoundingClientRect().y + sectionsHolder.clientHeight / 2)
+			}else{
+				sectionsDistanceFromTop = sectionsHolder.getBoundingClientRect().y - window.innerHeight + sectionsHolder.clientHeight/2;
+			}
+
+			
+			if(sectionsDistanceFromTop < 0){
+				alreadyScrolled = true;
+				scrollXinerval = setInterval(scrollSectionX,50)
+			}
 		}
 	}
 	scrolling();
@@ -125,10 +162,8 @@ function init(){
 		const showElementToFixWith = listToBeFixed.clientWidth < listToBeFixed.scrollWidth;
 		const shown = elementToFixWith.classList.contains('shown');
 		if(showElementToFixWith && !shown){
-			console.log('here')
 			elementToFixWith.classList.add('shown')
 		}else if(!showElementToFixWith && shown){
-			console.log('there')
 			elementToFixWith.classList.remove('shown')
 		}
 
@@ -136,6 +171,7 @@ function init(){
 
 	listToBeFixedListener();
 	window.addEventListener('resize' , debounce(listToBeFixedListener));
+
 
 }
 init();
