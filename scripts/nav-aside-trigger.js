@@ -2,9 +2,9 @@ const navAsideTrigger = () => {
   let windowHeight = document.documentElement.clientHeight;
   const body = document.querySelector('body');
   const menuBurger = document.querySelector('.nav-burger');
-  const pageWrapper = document.querySelector('.gb-page-wrapper');
+  const appWrapper = document.querySelector('.gb-app-wrapper');
   const navAside = document.querySelector('.gb-nav-aside')
-  const blackOverlay = document.querySelector('.gb-page-black-overlay');
+  const blackOverlay = document.querySelector('.gb-app-black-overlay');
   const navAsideCloseBtn = document.querySelector('.nav-aside-close');
 
   /* Debouncer */
@@ -41,7 +41,7 @@ const navAsideTrigger = () => {
     body.style.overflowY = 'hidden';
 
     //show the sidemenu, by adding translated class
-    pageWrapper.classList.add('translated');
+    appWrapper.classList.add('translated');
     navAside.classList.add('translated');
   })
 
@@ -52,7 +52,7 @@ const navAsideTrigger = () => {
     body.style.overflowY = 'unset';
 
     //hide the sidemenu, by removing translated class
-    pageWrapper.classList.remove('translated');
+    appWrapper.classList.remove('translated');
     navAside.classList.remove('translated');
   }
 

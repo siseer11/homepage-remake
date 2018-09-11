@@ -356,7 +356,7 @@ function slider(parentHolder, fakeSlidesData) {
 let fakeData = {
 	videosData: [
 		{
-			'image-url': './images/rome.jpg',
+			'image-url': './images/Rome.jpg',
 			'slide-title': 'Rome, Italy',
 			'slide-author': 'Globuzzer',
 			'video-url': 'https://www.youtube.com/watch?v=lxXGAbVd5sg',
