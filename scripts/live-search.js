@@ -1,25 +1,24 @@
-jQuery(document).ready(function($){
-
-$('.live-search-list li').each(function(){
-$(this).attr("search-term");
-});
-
-$('.live-search-box').on('keyup', function(){
-
-var searchTerm = $(this).val().toLowerCase();
-
-    $('.live-search-list li').each(function(){
-		
-		 
-        if ($(this).filter('[search-term ^=' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
-            $(this).show();
-        } else {
-            $(this).hide();
-			
-        }
-
+const liveSearch = () => {
+  let searchInput = document.querySelector(".live-search-box");
+  const noResultDiv = document.querySelector(".no-city-found");
+  let allCities = [...document.querySelectorAll(".gb-card-six-image")];
+  searchInput.addEventListener("keyup", e => {
+    const inputValue = searchInput.value;
+    const reg = new RegExp(`^${inputValue}`, "i");
+    const filtered = allCities.filter(el => {
+      if (reg.test(el.dataset.city)) {
+        el.style.display = "grid";
+        return true;
+      } else {
+        el.style.display = "none";
+        return false;
+      }
     });
-
-});
-
-});
+    if (filtered.length == 0) {
+      noResultDiv.style.display = "flex";
+    } else {
+      noResultDiv.style.display = "none";
+    }
+  });
+};
+liveSearch();
