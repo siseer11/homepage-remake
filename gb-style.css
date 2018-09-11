@@ -2211,7 +2211,7 @@ input.gb-swithcer-checkbox:checked + .gb-switcher-slider:before {
 
 .gb-navbar {
   width: 100%;
-  padding: 25px 15px;
+  padding: 25px 16px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2922,6 +2922,7 @@ input.gb-swithcer-checkbox:checked + .gb-switcher-slider:before {
 }
 
 .carousel-1-about-slide {
+	padding: 0 16px;
   text-align: center;
   -webkit-transition: 0.4s linear opacity;
   -o-transition: 0.4s linear opacity;
@@ -4220,6 +4221,24 @@ li.footer-contact-item .footer-contact-link svg {
   cursor: pointer;
 }
 
+.no-city-found {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.no-city-found > *:nth-child(1){
+	max-width: 450px;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+
 .gb-card-six-avatars-container > * {
   margin: 0 8px;
 }
@@ -4555,8 +4574,8 @@ li.footer-contact-item .footer-contact-link svg {
 
 /* gb-section-600 start */
 .gb-section-600 {
-  max-width: 600px;
-  padding: 100px 10px 80px;
+	max-width: 600px;
+	padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -4628,9 +4647,6 @@ li.footer-contact-item .footer-contact-link svg {
 }
 .gb-card-16 .card-16-title {
   margin-bottom: 10px;
-}
-.gb-card-16 .card-16-subtitle {
-  margin-bottom: 40px;
 }
 .card-16-list {
   align-items: center;

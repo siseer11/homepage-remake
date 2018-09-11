@@ -22,9 +22,9 @@ function init(){
 		e.preventDefault();
 
 		const value = searchForm.querySelector('.search-input').value.replace(/[^a-z0-9]/g, '')
-
-		window.open(`https://globuzzer.mn.co/search?term=’${value}’`)
-		//
+		if(value){
+			window.open(`https://globuzzer.mn.co/search?term=’${value}’`)
+		}
 	});
 
 
