@@ -20,6 +20,7 @@ body {
 textarea {
   outline: none;
   border: none;
+  resize: none;
 }
 
 a {
@@ -4054,6 +4055,8 @@ li.footer-contact-item .footer-contact-link svg {
   position: relative;
   margin-left: 8px;
   margin-right: 8px;
+  box-sizing: border-box;
+  padding: 0 16px;
 }
 @media screen and (min-width: 600px) {
   .gb-card-five-wrapper {
