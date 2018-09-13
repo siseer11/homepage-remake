@@ -1,7 +1,7 @@
 	    <?php
 	error_reporting(0);
 if((isset($_POST['email']))&&(isset($_POST['name'])&&$_POST['message']!="")){ 
-  $to = 'shahzad.salamat@yahoo.com';
+  $to = 'info@globuzzer.com';
   $subject = 'feedback from globuzzer.com';
   $message = '
         <html>

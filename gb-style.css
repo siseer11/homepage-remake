@@ -27,6 +27,10 @@ a {
   text-decoration: none;
 }
 
+.gb-display-none {
+  display:none;
+}
+
 input {
   outline: none;
   border: none;

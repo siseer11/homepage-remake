@@ -1,7 +1,7 @@
 
-$("#success-message").hide();
-$("#error-message").hide();
-$(function () {    
+
+$(function () { 
+  
   $("#gb-feedback").submit(function (e) {
     e.preventDefault();
     var form_data = $(this).serialize(); 
@@ -12,10 +12,10 @@ $(function () {
       data: form_data
     }).done(function (data) {
         console.log(data);
-		$("#success-message").show();
+		document.getElementById('success-message').style.display = 'block';
     }).fail(function (data) {
         console.log(data);
-		$("#error-message").show();
+		document.getElementById('error-message').style.display = 'block';
     });
   }); 
 });
