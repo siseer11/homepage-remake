@@ -188,12 +188,12 @@ function initialize() {
 	
 	 var marker = new google.maps.Marker({
      position: map.getCenter(),
-    map: map,
+          map: map,
 	     title: 'Globuzzer Office address',
 
     icon: {
 		url: 'images/pin.png',
-		scaledSize: new google.maps.Size(64, 64)
+		scaledSize: new google.maps.Size(50, 50),
     }
   });
   
@@ -203,8 +203,7 @@ function initialize() {
   });
 
   google.maps.event.addListener(marker, 'click', function() {
-    infowindow.setContent('<b>Skyttevägen 29,' + ' </br>' + '133 36 Saltsjöbaden, Sweden</b>' +
-      '<p>Time: ' + this.time + '</p>');
+    infowindow.setContent('<b>Skyttevägen 29,' + ' </br>' + '133 36 Saltsjöbaden, Sweden</b>');
     infowindow.open(map, this);
   });
   google.maps.event.trigger(marker, 'click');
@@ -215,6 +214,4 @@ function initialize() {
   
 }
 
-
 google.maps.event.addDomListener(window, "load", initialize);
-
