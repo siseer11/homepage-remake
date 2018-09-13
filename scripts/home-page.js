@@ -43,8 +43,9 @@ function init(){
 
 	let citySectionPassed = sectionsHolder.getBoundingClientRect().y + sectionsHolder.clientHeight/2 < 0; //initial scroll of the page is allready ove it if < 0 is passed
 
+
 	const scrollSectionX = () => {
-		scrollAt+=2;
+		scrollAt+=3;
 		sectionsHolder.scrollTo({
 			left: scrollAt
 		});
@@ -52,9 +53,14 @@ function init(){
 		sectionWidth = sectionWidth > 150? 150 : sectionWidth;
 		
 		if(scrollAt >= sectionWidth){
-			clearInterval(scrollXinerval)
+			clearInterval(scrollXinerval);
+			sectionsHolder.pointerEvents = 'unset';
 		}
 	}
+
+
+	
+
 	//Scroll effect
 	const scrolling = (e) => {
 		/* Script for the blackHeaderOverlay to change it's opacity */
@@ -90,7 +96,8 @@ function init(){
 			
 			if(sectionsDistanceFromTop < 0){
 				alreadyScrolled = true;
-				scrollXinerval = setInterval(scrollSectionX,50)
+				scrollXinerval = setInterval(scrollSectionX,50);
+				sectionsHolder.pointerEvents = 'none';
 			}
 		}
 	}
@@ -102,6 +109,7 @@ function init(){
 	const navAsideLinks = document.querySelectorAll('.nav-aside-content a');
 	const navAside = document.querySelector('.gb-nav-aside');
 	const pageWrapper = document.querySelector('.gb-page-wrapper');
+	const appWrapper = document.querySelector('.gb-app-wrapper');
 
 	//Function that scroll to an element when pressing a link from both nav and navaside
 	const scrollToSection = (element) => {
@@ -109,9 +117,10 @@ function init(){
 		const elementFromTop = scrollToElement.offsetTop; //get the distance from the top of the specific element
 		
 		// The cases when the user is clicking from the navaside links
-		if(pageWrapper.classList.contains('translated')){
+		if(appWrapper.classList.contains('translated')){
 			//close the navAside
-			pageWrapper.classList.remove('translated');
+			
+			appWrapper.classList.remove('translated');
 			navAside.classList.remove('translated');
 
 			//after the transition of the navAside is done scroll to the element
@@ -148,7 +157,8 @@ function init(){
 		if(el.dataset.scrollTo){
 			el.addEventListener('click' , (e) => {
 				e.preventDefault();
-				scrollToSection(el)
+				scrollToSection(el);
+				document.querySelector('body').style.overflowY = 'unset';
 			}
 		)
 		}

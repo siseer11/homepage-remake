@@ -23,7 +23,6 @@
   <meta content="Globuzzer - World First Travelers Social Network" name="twitter:title">
   <meta content="Globuzzer is the World's First Travelers' Social Network , here you can share your travel stories and get a full travel information from other nomads"
     name="twitter:description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type='text/css' href="gb-style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="scripts/videoJS/node_modules/video.js/dist/video-js.min.css" />
@@ -99,6 +98,11 @@
     <!-- Nav start-->
     <div class="gb-navbar gb-background-transparent">
       <div class="left-content">
+        <a href="#" class='gb-tablet-hide gb-phone-hide nav-logo'>
+          <svg class="gb-logo-large gb-icon-fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <use xlink:href="#gb-logo-large"></use>
+          </svg>
+        </a>
         <a href='#' class='gb-desktop-hide nav-burger'>
           <svg class='gb-icon-medium gb-icon-white' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <use xlink:href='#menu'></use>
@@ -197,7 +201,7 @@
       <!-- How-to-join end-->
 
 <!-- CITY SECTION START -->
-      <div class='city-section'>
+      <div id='city-sections' class='city-section'>
         <div class="gb-page-content-center gb-flex-direction-column">
           <h2 class='gb-text-dark-blue gb-title-xx-large gb-text-center gb-text-uppercase gb-margin-bottom-phone-16 gb-margin-bottom-tablet-16 gb-margin-bottom-desktop-40 gb-margin-top-phone-16 gb-margin-top-tablet-16 gb-margin-top-desktop-40'>city section
         </h2>
@@ -487,7 +491,7 @@
       </div>
       <!-- CITY SECTION ENDS -->
       <!-- Video section start-->
-      <div class='gb-video-section gb-padding-bottom-48 gb-margin-top-32 gb-padding-top-56'>
+      <div class='gb-video-section gb-padding-top-phone-56 gb-padding-top-tablet-56 gb-padding-top-desktop-56 gb-padding-bottom-phone-56 gb-padding-bottom-tablet-56 gb-padding-bottom-desktop-56 gb-margin-top-tablet-32 gb-margin-top-desktop-56'>
         <h2 class='gb-text-dark-blue gb-title-xx-large gb-text-center gb-text-uppercase gb-margin-bottom-phone-16 gb-margin-bottom-tablet-16 gb-margin-bottom-desktop-40'>Featured Videos
         </h2>
         <div data-for='videosData' class='gb-image-carousel-1'>
@@ -503,7 +507,7 @@
       </div>
       <!-- Video section end-->
       <!-- Travelers’ Needs start-->
-      <div class='gb-card-16 travelers-needs'>
+      <div class='gb-card-16 travelers-needs gb-padding-top-phone-48 gb-padding-top-tablet-56 gb-padding-top-desktop-56 '>
         <h1 class='card-16-title gb-text-dark-blue gb-title-xx-large gb-text-center gb-text-uppercase'>Travelers’ Needs</h1>
         <p class='card-16-subtitle gb-paragraph-medium gb-text-black gb-text-center'>Other helpful applications which are powered by us. Enjoy!</p>
         <ul class='card-16-list'>
@@ -551,8 +555,9 @@
       </div>
       <!-- Travelers’ Needs end-->
       <!-- TIMELINE SECTION STARTS -->
+      <div class='gb-padding-top-phone-32 gb-padding-top-tablet-40 gb-padding-top-desktop-40'>
       <h2 class='gb-text-dark-blue gb-title-xx-large gb-text-center gb-text-uppercase gb-margin-bottom-phone-16 gb-margin-bottom-tablet-16 gb-margin-bottom-desktop-40 gb-margin-top-phone-16 gb-margin-top-tablet-16 gb-margin-top-desktop-40'>timeline</h2>
-      <div class="gb-card-five-wrapper">
+      <div class="gb-card-five-wrapper gb-padding-top-phone-24 gb-padding-top-tablet-32 gb-padding-top-desktop-32 gb-padding-bottom-phone-40 gb-padding-bottom-tablet-48 gb-padding-bottom-desktop-56">
         <div class='gb-card-five-day'>
           <div class='gb-card-five-day-head'>
             <h2 class='gb-card-five-day-title'>2018</h2>
@@ -736,15 +741,15 @@
         </div>
 
       </div>
-
+    </div>
       <!-- TIMELINE SECTION ENDS -->
 
       <!-- PARTNERS SECTION STARTS -->
 
-      <div id='parteners'>
-        <h2 class='gb-text-dark-blue gb-title-xx-large gb-text-center gb-text-uppercase gb-margin-bottom-phone-16 gb-margin-bottom-tablet-16 gb-margin-bottom-desktop-40 gb-margin-top-phone-16 gb-margin-top-tablet-16 gb-margin-top-desktop-40'>Our partners</h2>
+      <div id='parteners' class='gb-padding-top-phone-24 gb-padding-top-tablet-32 gb-padding-top-desktop-48 gb-padding-bottom-phone-40 gb-padding-bottom-tablet-48 gb-padding-bottom-desktop-56'>
+        <h2 class='gb-text-dark-blue gb-title-xx-large gb-text-center gb-text-uppercase gb-margin-bottom-phone-16 gb-margin-bottom-tablet-16 gb-margin-bottom-desktop-16 gb-margin-top-phone-16 gb-margin-top-tablet-16 gb-margin-top-desktop-40'>Our partners</h2>
         
-        <p class='gb-paragraph-medium gb-text-black gb-text-center gb-margin-bottom-phone-16 gb-margin-bottom-tablet-16 gb-margin-bottom-desktop-40 gb-margin-top-phone-16 gb-margin-top-tablet-16 gb-margin-top-desktop-40'>Together with our partners, Globuzzer caters to the needs of travelers, students and expats.</p>
+        <p class='gb-paragraph-medium gb-text-black gb-text-center gb-margin-bottom-phone-16 gb-margin-bottom-tablet-16 gb-margin-bottom-desktop-40 gb-margin-top-phone-4 gb-margin-top-tablet-8 gb-margin-top-desktop-8'>Together with our partners, Globuzzer caters to the needs of travelers, students and expats.</p>
 
 
         <div class="gb-images-inline-container gb-margin-bottom-40">
@@ -831,7 +836,7 @@
                <div class="gb-paragraph-medium gb-text-green gb-text-center gb-display-none" id="success-message"><p>Your message has been successfuly sent, We will get back to you soon!</p></div>
                <div class="gb-paragraph-medium gb-text-red gb-text-center gb-display-none" id="error-message"><p>Error! there is an error sending your message, please try again.</p></div>
 
-              <div class="gb-input-wrapper-relative gb-margin-bottom-32">
+              <div class="gb-input-wrapper-relative gb-margin-bottom-phone-40 gb-margin-bottom-tablet-40 gb-margin-bottom-desktop-48">
                 <button type="submit" class="gb-btn gb-btn-large gb-btn-primary">Submit</button>
               </div>
             </form>
@@ -933,9 +938,6 @@
                 </a>
               </li>
             </ul>
-
-
-
           </div>
           <div class='footer-bottom-content'>
             <div class="footer-rights-reserved">
